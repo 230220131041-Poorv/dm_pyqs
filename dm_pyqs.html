@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M1G9DSDTPD"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-M1G9DSDTPD');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Mining — Complete Question Bank Answers</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f5f9;--card:#fff;--card2:#f8f9fc;
+  --ink:#0f1117;--ink2:#2d3142;--ink3:#6b7280;
+  --accent:#1d6fa4;--green:#16a05e;--red:#d94f4f;--teal:#0891b2;--orange:#c2610f;
+  --border:#e2e5ef;--border2:#d1d5e8;
+  --mp:rgba(29,111,164,0.08);--mpt:#1d6fa4;
+  --mg:rgba(22,160,94,0.1);--mgt:#16a05e;
+  --mo:rgba(217,79,79,0.1);--mot:#d94f4f;
+  --mt:rgba(8,145,178,0.1);--mtt:#0891b2;
+  --glow:0 4px 24px rgba(29,111,164,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:15px;}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(29,111,164,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(29,111,164,0.025) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0;}
+.page-header{position:relative;background:linear-gradient(135deg,#e8f4fd 0%,#dbeeff 50%,#eef6ff 100%);border-bottom:1px solid var(--border2);padding:36px 48px 32px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px;overflow:hidden;}
+.page-header::after{content:'';position:absolute;top:-60px;right:-60px;width:260px;height:260px;background:radial-gradient(circle,rgba(29,111,164,0.1) 0%,transparent 70%);pointer-events:none;}
+.header-chip{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--mp);border:1px solid rgba(29,111,164,0.2);border-radius:20px;padding:3px 12px;margin-bottom:10px;display:inline-block;font-weight:600;}
+.page-header h1{font-family:'Playfair Display',serif;font-size:26px;color:var(--ink);line-height:1.2;margin-bottom:4px;}
+.page-header h1 span{color:var(--accent);}
+.page-header p{font-size:13px;color:var(--ink3);}
+.header-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+.count-badge{font-size:12px;font-weight:600;background:var(--mp);color:var(--mpt);border:1px solid rgba(29,111,164,0.2);padding:6px 16px;border-radius:20px;white-space:nowrap;}
+.toc{background:#fff;border-bottom:1px solid var(--border);padding:14px 48px;display:flex;gap:7px;flex-wrap:wrap;align-items:center;box-shadow:0 1px 4px rgba(0,0,0,0.05);}
+.toc-label{font-size:10px;color:var(--ink3);text-transform:uppercase;letter-spacing:.1em;margin-right:4px;font-weight:600;}
+.toc a{font-size:11px;padding:3px 10px;border-radius:14px;background:transparent;color:var(--ink3);text-decoration:none;border:1px solid var(--border2);transition:all .18s;}
+.toc a:hover{background:var(--mp);color:var(--accent);border-color:rgba(29,111,164,0.3);}
+.container{max-width:960px;margin:0 auto;padding:36px 24px 100px;position:relative;z-index:1;}
+.section-title{font-family:'Playfair Display',serif;font-size:20px;color:var(--accent);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:10px;}
+.section-title span{font-size:12px;font-weight:400;font-family:'Outfit',sans-serif;color:var(--ink3);background:var(--mp);padding:2px 10px;border-radius:10px;}
+.q-card{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:28px;overflow:hidden;scroll-margin-top:80px;transition:border-color .2s,box-shadow .2s;box-shadow:0 1px 6px rgba(0,0,0,0.04);}
+.q-card:hover{border-color:var(--border2);box-shadow:var(--glow);}
+.q-header{display:flex;align-items:flex-start;gap:14px;padding:18px 26px 16px;border-bottom:1px solid var(--border);background:var(--card2);}
+.q-num{font-size:10px;font-weight:600;color:var(--accent);background:var(--mp);border:1px solid rgba(29,111,164,0.2);border-radius:8px;padding:3px 9px;white-space:nowrap;margin-top:3px;}
+.q-text{font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);line-height:1.45;flex:1;font-weight:600;}
+.q-body{padding:26px;}
+h3{font-size:10px;font-weight:700;color:var(--accent);margin:22px 0 9px;text-transform:uppercase;letter-spacing:.1em;display:flex;align-items:center;gap:8px;}
+h3::before{content:'';display:block;width:14px;height:2px;background:var(--accent);border-radius:2px;flex-shrink:0;}
+h3:first-child{margin-top:0;}
+h4{font-size:14px;font-weight:600;color:var(--ink);margin:16px 0 6px;border-left:2px solid var(--accent);padding-left:10px;}
+p{margin-bottom:10px;color:var(--ink2);font-size:14.5px;}
+p:last-child{margin-bottom:0;}
+ul,ol{padding-left:20px;margin-bottom:10px;color:var(--ink2);}
+li{margin-bottom:5px;font-size:14px;}
+li strong{color:var(--ink);}
+.highlight{background:linear-gradient(135deg,rgba(29,111,164,0.06),rgba(8,145,178,0.04));border:1px solid rgba(29,111,164,0.15);border-left:3px solid var(--accent);padding:12px 18px;border-radius:0 10px 10px 0;margin:14px 0;font-size:14px;color:var(--ink);}
+.formula{font-family:'JetBrains Mono',monospace;background:#f0f6ff;border:1px solid #d6e8f8;border-left:3px solid var(--teal);border-radius:0 10px 10px 0;padding:14px 18px;font-size:13px;margin:14px 0;color:#0c4a6e;overflow-x:auto;line-height:1.9;}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px;border-radius:10px;overflow:hidden;border:1px solid var(--border);}
+th{background:rgba(29,111,164,0.08);color:var(--accent);padding:9px 14px;text-align:left;font-weight:700;font-size:12px;letter-spacing:.03em;border-bottom:1px solid var(--border2);}
+td{padding:8px 14px;border-bottom:1px solid var(--border);color:var(--ink2);font-size:13px;}
+tr:last-child td{border-bottom:none;}
+tr:nth-child(even) td{background:#fafbff;}
+.diagram{background:#f8f9fc;border:1px solid var(--border);border-radius:12px;padding:20px;margin:18px 0;text-align:center;}
+.diagram-title{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);margin-bottom:14px;font-weight:700;}
+.step-list{counter-reset:step;list-style:none;padding:0;}
+.step-list li{counter-increment:step;padding:8px 14px 8px 46px;position:relative;margin-bottom:6px;background:#fafbff;border:1px solid var(--border);border-radius:10px;color:var(--ink2);font-size:14px;transition:background .15s;}
+.step-list li:hover{background:rgba(29,111,164,0.04);}
+.step-list li::before{content:counter(step);position:absolute;left:13px;top:8px;width:22px;height:22px;background:var(--mp);color:var(--accent);border:1px solid rgba(29,111,164,0.2);border-radius:50%;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:12px 0;}
+.col-box{background:#fafbff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;}
+.col-box:hover{border-color:var(--border2);}
+.col-box strong{font-size:13px;color:var(--ink);display:block;margin-bottom:6px;font-weight:600;}
+.col-box p,.col-box li{font-size:13px;margin-bottom:4px;}
+.note{background:rgba(22,160,94,0.07);border:1px solid rgba(22,160,94,0.15);border-left:3px solid var(--green);padding:10px 16px;border-radius:0 10px 10px 0;font-size:13px;color:#0f6b41;margin:12px 0;font-weight:500;}
+.warn{background:rgba(217,79,79,0.07);border:1px solid rgba(217,79,79,0.15);border-left:3px solid var(--red);padding:10px 16px;border-radius:0 10px 10px 0;font-size:13px;color:#7f1d1d;margin:12px 0;}
+.calc-box{background:#fff8f0;border:1px solid #fed7aa;border-left:3px solid var(--orange);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:#7c2d12;line-height:1.9;}
+@media(max-width:600px){.page-header{padding:20px 18px;flex-direction:column;}.toc{padding:12px 18px;}.container{padding:20px 14px 60px;}.q-header{padding:14px 16px;}.q-body{padding:16px;}.two-col,.three-col{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="page-header">
+  <div>
+    <div class="header-chip">GTU · GEC Patan · Data Mining</div>
+    <h1>Data <span>Mining</span></h1>
+    <p>Complete Question Bank Answers — All 62 Questions · Exam Ready</p>
+  </div>
+  <div class="header-right">
+    <span class="count-badge">62 Questions Answered</span>
+    <span style="font-size:11px;color:var(--ink3);">Prepared for University Exam</span>
+  </div>
+</div>
+<div class="toc">
+  <span class="toc-label">Sections:</span>
+  <a href="#s1">Fundamentals</a>
+  <a href="#s2">Pre-processing</a>
+  <a href="#s3">Association Rules</a>
+  <a href="#s4">Classification</a>
+  <a href="#s5">Clustering</a>
+  <a href="#s6">Neural Networks</a>
+  <a href="#s7">Advanced Topics</a>
+  <a href="#s8">Numerical</a>
+</div>
+<div class="container">
+
+<!-- ==================== SECTION 1: FUNDAMENTALS ==================== -->
+<div class="section-title" id="s1">Section 1 — Fundamentals of Data Mining <span>Q1–Q7</span></div>
+
+<!-- Q1 -->
+<div class="q-card" id="q1">
+<div class="q-header"><span class="q-num">Q 1</span><span class="q-text">Justify the importance of data mining.</span></div>
+<div class="q-body">
+<h3>Definition</h3>
+<p><strong>Data Mining</strong> is the process of discovering interesting patterns, correlations, anomalies, and useful knowledge from large amounts of data stored in databases, data warehouses, or other information repositories.</p>
+<h3>Why Data Mining is Important</h3>
+<div class="two-col">
+<div class="col-box"><strong>🔍 Knowledge Discovery</strong><p>Extracts hidden patterns and relationships from massive datasets that cannot be found manually.</p></div>
+<div class="col-box"><strong>📈 Business Intelligence</strong><p>Helps organizations make data-driven decisions, predict customer behavior, and increase profits.</p></div>
+<div class="col-box"><strong>🏥 Healthcare</strong><p>Disease pattern detection, drug interaction analysis, patient outcome prediction.</p></div>
+<div class="col-box"><strong>🛡️ Fraud Detection</strong><p>Banks and financial institutions use data mining to detect unusual transaction patterns indicating fraud.</p></div>
+<div class="col-box"><strong>🛒 Market Basket Analysis</strong><p>Retailers identify which products are frequently bought together to optimize product placement.</p></div>
+<div class="col-box"><strong>🌐 Web Mining</strong><p>Improves search engines, recommendation systems (Netflix, Amazon), and targeted advertising.</p></div>
+</div>
+<h3>Justification — Data Explosion</h3>
+<p>The world generates <strong>2.5 quintillion bytes</strong> of data daily. Traditional database query tools cannot extract meaningful insight from this volume. Data mining bridges the gap between data and knowledge.</p>
+<div class="highlight"><strong>KDD Pipeline:</strong> Raw Data → Data Cleaning → Integration → Selection → Transformation → Data Mining → Pattern Evaluation → Knowledge</div>
+<h3>Key Applications</h3>
+<ul>
+<li>Customer churn prediction in telecom</li>
+<li>Credit scoring and loan approval in banking</li>
+<li>Medical diagnosis and genomics</li>
+<li>Intrusion detection in cybersecurity</li>
+<li>Supply chain optimization</li>
+</ul>
+<div class="note">📌 Data mining turns raw data into actionable intelligence — it is the engine of the modern data-driven economy.</div>
+</div></div>
+
+<!-- Q2 -->
+<div class="q-card" id="q2">
+<div class="q-header"><span class="q-num">Q 2</span><span class="q-text">Briefly discuss steps of KDD process.</span></div>
+<div class="q-body">
+<h3>KDD — Knowledge Discovery in Databases</h3>
+<p><strong>KDD</strong> is the overall process of discovering useful knowledge from data. Data Mining is just one step in the KDD process.</p>
+<div class="diagram">
+<div class="diagram-title">KDD Process Flow</div>
+<svg viewBox="0 0 700 100" xmlns="http://www.w3.org/2000/svg" width="100%">
+<defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#1d6fa4" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+<rect x="5" y="30" width="85" height="36" rx="7" fill="rgba(29,111,164,0.1)" stroke="rgba(29,111,164,0.3)" stroke-width="1"/>
+<text x="47" y="51" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#1d6fa4">Raw Data</text>
+<line x1="92" y1="48" x2="108" y2="48" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a1)"/>
+<rect x="110" y="30" width="80" height="36" rx="7" fill="rgba(22,160,94,0.1)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="150" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#16a05e">Selection &amp;</text>
+<text x="150" y="57" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#16a05e">Cleaning</text>
+<line x1="192" y1="48" x2="208" y2="48" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a1)"/>
+<rect x="210" y="30" width="80" height="36" rx="7" fill="rgba(8,145,178,0.1)" stroke="rgba(8,145,178,0.3)" stroke-width="1"/>
+<text x="250" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#0891b2">Transfor-</text>
+<text x="250" y="57" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#0891b2">mation</text>
+<line x1="292" y1="48" x2="308" y2="48" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a1)"/>
+<rect x="310" y="30" width="80" height="36" rx="7" fill="rgba(194,97,15,0.1)" stroke="rgba(194,97,15,0.3)" stroke-width="1"/>
+<text x="350" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#c2610f">Data</text>
+<text x="350" y="57" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#c2610f">Mining</text>
+<line x1="392" y1="48" x2="408" y2="48" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a1)"/>
+<rect x="410" y="30" width="80" height="36" rx="7" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="450" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#d94f4f">Pattern</text>
+<text x="450" y="57" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#d94f4f">Evaluation</text>
+<line x1="492" y1="48" x2="508" y2="48" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a1)"/>
+<rect x="510" y="30" width="85" height="36" rx="7" fill="rgba(29,111,164,0.15)" stroke="rgba(29,111,164,0.4)" stroke-width="1.5"/>
+<text x="552" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#1d6fa4">Knowledge</text>
+<text x="552" y="57" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#1d6fa4">Presentation</text>
+</svg>
+</div>
+<h3>Steps in Detail</h3>
+<ol class="step-list">
+<li><strong>Data Cleaning:</strong> Remove noise, handle missing values, correct inconsistencies in raw data.</li>
+<li><strong>Data Integration:</strong> Combine data from multiple heterogeneous sources (databases, flat files, OLAP) into a unified store.</li>
+<li><strong>Data Selection:</strong> Retrieve only the data relevant to the analysis task from the database.</li>
+<li><strong>Data Transformation:</strong> Convert data into appropriate mining forms — normalization, aggregation, generalization.</li>
+<li><strong>Data Mining:</strong> Apply intelligent methods (classification, clustering, association rules) to extract patterns.</li>
+<li><strong>Pattern Evaluation:</strong> Identify truly interesting patterns based on interestingness measures (support, confidence, lift).</li>
+<li><strong>Knowledge Presentation:</strong> Visualize and present the mined knowledge to the user using charts, rules, trees.</li>
+</ol>
+<div class="note">📌 Exam tip: KDD = the entire pipeline. Data Mining = step 5 only. Many students confuse the two.</div>
+</div></div>
+
+<!-- Q3 -->
+<div class="q-card" id="q3">
+<div class="q-header"><span class="q-num">Q 3</span><span class="q-text">Explain data reduction and dimensionality reduction.</span></div>
+<div class="q-body">
+<h3>Data Reduction</h3>
+<p><strong>Data Reduction</strong> is the process of obtaining a reduced representation of the dataset that produces the same (or almost same) analytical results. The goal is to reduce storage and processing time while preserving data integrity.</p>
+<h3>Techniques of Data Reduction</h3>
+<div class="two-col">
+<div class="col-box"><strong>Dimensionality Reduction</strong><p>Reduce the number of attributes/features. Methods: PCA, wavelet transforms, feature selection.</p></div>
+<div class="col-box"><strong>Numerosity Reduction</strong><p>Reduce data volume by choosing alternative, smaller data representations. E.g., regression models, histograms, clustering.</p></div>
+<div class="col-box"><strong>Data Compression</strong><p>Use encoding mechanisms to reduce data size. Lossless (ZIP) and lossy (image compression) techniques.</p></div>
+<div class="col-box"><strong>Data Cube Aggregation</strong><p>Summarize data at higher concept levels — e.g., daily sales → monthly sales → yearly sales.</p></div>
+</div>
+<h3>Dimensionality Reduction</h3>
+<p><strong>Dimensionality Reduction</strong> specifically reduces the number of attributes (features/variables) in a dataset. High-dimensional data suffers from the "curse of dimensionality" — too many features make learning slow and inaccurate.</p>
+<h4>Principal Component Analysis (PCA)</h4>
+<p>PCA transforms correlated variables into a set of uncorrelated variables called principal components, ordered by the amount of variance they explain. Only the top k components (explaining most variance) are kept.</p>
+<div class="formula">New Attributes = Linear combinations of original attributes
+PC1 = direction of maximum variance
+PC2 = direction of second maximum variance (⊥ to PC1)</div>
+<h4>Attribute Subset Selection</h4>
+<p>Remove irrelevant or redundant attributes. Methods: stepwise forward/backward selection, decision-tree-based selection.</p>
+<div class="diagram">
+<div class="diagram-title">Dimensionality Reduction — 3D to 2D via PCA</div>
+<svg viewBox="0 0 500 130" xmlns="http://www.w3.org/2000/svg" width="100%">
+<rect x="10" y="20" width="200" height="90" rx="8" fill="rgba(29,111,164,0.04)" stroke="rgba(29,111,164,0.2)" stroke-width="1"/>
+<text x="110" y="14" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">Original 3D Space</text>
+<circle cx="60" cy="60" r="5" fill="#1d6fa4" opacity="0.6"/><circle cx="90" cy="45" r="5" fill="#1d6fa4" opacity="0.6"/><circle cx="75" cy="80" r="5" fill="#1d6fa4" opacity="0.6"/>
+<circle cx="130" cy="55" r="5" fill="#16a05e" opacity="0.6"/><circle cx="155" cy="70" r="5" fill="#16a05e" opacity="0.6"/><circle cx="140" cy="40" r="5" fill="#16a05e" opacity="0.6"/>
+<text x="110" y="105" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">X1, X2, X3</text>
+<text x="250" y="70" text-anchor="middle" font-family="Outfit,sans-serif" font-size="20" fill="#1d6fa4">→</text>
+<rect x="290" y="20" width="200" height="90" rx="8" fill="rgba(22,160,94,0.04)" stroke="rgba(22,160,94,0.2)" stroke-width="1"/>
+<text x="390" y="14" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#16a05e">Reduced 2D Space (PCA)</text>
+<circle cx="330" cy="65" r="5" fill="#1d6fa4" opacity="0.7"/><circle cx="350" cy="50" r="5" fill="#1d6fa4" opacity="0.7"/><circle cx="340" cy="80" r="5" fill="#1d6fa4" opacity="0.7"/>
+<circle cx="400" cy="60" r="5" fill="#16a05e" opacity="0.7"/><circle cx="420" cy="75" r="5" fill="#16a05e" opacity="0.7"/><circle cx="410" cy="45" r="5" fill="#16a05e" opacity="0.7"/>
+<text x="390" y="105" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">PC1, PC2</text>
+</svg>
+</div>
+<div class="note">📌 Dimensionality reduction is a subset of data reduction. It specifically targets the number of features, not the number of records.</div>
+</div></div>
+
+<!-- Q4 -->
+<div class="q-card" id="q4">
+<div class="q-header"><span class="q-num">Q 4</span><span class="q-text">What do you mean by correlation analysis? Justify its importance.</span></div>
+<div class="q-body">
+<h3>Correlation Analysis</h3>
+<p><strong>Correlation Analysis</strong> measures the statistical relationship (degree of association) between two or more attributes/variables. It determines whether changes in one variable are associated with changes in another.</p>
+<h3>Types of Correlation</h3>
+<div class="three-col">
+<div class="col-box"><strong>Positive Correlation</strong><p>Both variables increase together. E.g., Height and Weight.</p></div>
+<div class="col-box"><strong>Negative Correlation</strong><p>One increases as other decreases. E.g., Speed and Travel time.</p></div>
+<div class="col-box"><strong>No Correlation</strong><p>No linear relationship. E.g., Shoe size and IQ.</p></div>
+</div>
+<h3>Pearson's Correlation Coefficient</h3>
+<div class="formula">r = Σ[(xᵢ - x̄)(yᵢ - ȳ)] / √[Σ(xᵢ - x̄)² × Σ(yᵢ - ȳ)²]
+
+Range: -1 ≤ r ≤ +1
+  r = +1 : Perfect positive correlation
+  r = -1 : Perfect negative correlation
+  r =  0 : No correlation</div>
+<h3>Chi-Square Test for Nominal Data</h3>
+<div class="formula">χ² = Σ [(Observed - Expected)² / Expected]
+If χ² > threshold → attributes are correlated</div>
+<h3>Importance in Data Mining</h3>
+<ul>
+<li><strong>Feature Selection:</strong> Remove highly correlated (redundant) features to reduce dimensionality</li>
+<li><strong>Anomaly Detection:</strong> Unexpected correlations can indicate data errors or interesting patterns</li>
+<li><strong>Association Rule Mining:</strong> Correlation helps identify meaningful associations vs spurious ones</li>
+<li><strong>Preprocessing:</strong> Guides data transformation and normalization decisions</li>
+<li><strong>Classification:</strong> Correlated features may cause multicollinearity problems in models</li>
+</ul>
+<div class="note">📌 Correlation does NOT imply causation. Two variables can be correlated without one causing the other.</div>
+</div></div>
+
+<!-- Q5 -->
+<div class="q-card" id="q5">
+<div class="q-header"><span class="q-num">Q 5</span><span class="q-text">Define: concept description, support, confidence, strong association rules, data generalization, unsupervised learning.</span></div>
+<div class="q-body">
+<h3>Key Definitions</h3>
+<h4>1. Concept Description</h4>
+<p>Concept description is the characterization and discrimination of a class/concept. <strong>Characterization</strong> summarizes the general features of a target class. <strong>Discrimination</strong> compares the target class with other classes to find distinguishing features.</p>
+<h4>2. Support</h4>
+<p>Support of a rule A → B is the percentage of transactions in the database that contain both A and B.</p>
+<div class="formula">Support(A → B) = P(A ∪ B) = (Transactions containing A and B) / (Total Transactions) × 100%</div>
+<h4>3. Confidence</h4>
+<p>Confidence of a rule A → B is the percentage of transactions containing A that also contain B.</p>
+<div class="formula">Confidence(A → B) = P(B|A) = Support(A ∪ B) / Support(A) × 100%</div>
+<h4>4. Strong Association Rules</h4>
+<p>A rule is called <strong>strong</strong> if it satisfies both minimum support (min_sup) AND minimum confidence (min_conf) thresholds simultaneously. Only strong rules are considered interesting/useful.</p>
+<div class="formula">Rule is STRONG if:
+  Support(A → B) ≥ min_sup  AND
+  Confidence(A → B) ≥ min_conf</div>
+<h4>5. Data Generalization</h4>
+<p>Data generalization summarizes data by replacing low-level data values with higher-level concepts using a concept hierarchy. E.g., "Mumbai" → "Maharashtra" → "India". It allows analysis at different levels of abstraction.</p>
+<h4>6. Unsupervised Learning</h4>
+<p>Unsupervised learning works with <strong>unlabeled data</strong>. The algorithm discovers hidden structure, patterns, or groupings in data without any predefined output labels. Example: Clustering customers by purchasing behavior without predefined categories.</p>
+<div class="highlight">Support measures frequency; Confidence measures strength. Both must exceed thresholds for a rule to be "strong".</div>
+</div></div>
+
+<!-- Q6 -->
+<div class="q-card" id="q6">
+<div class="q-header"><span class="q-num">Q 6</span><span class="q-text">Define supervised, unsupervised and active learning.</span></div>
+<div class="q-body">
+<table>
+<tr><th>Aspect</th><th>Supervised Learning</th><th>Unsupervised Learning</th><th>Active Learning</th></tr>
+<tr><td>Data</td><td>Labeled (X, Y)</td><td>Unlabeled (X only)</td><td>Partially labeled</td></tr>
+<tr><td>Goal</td><td>Learn f(X)=Y mapping</td><td>Find hidden structure</td><td>Minimize labeling cost</td></tr>
+<tr><td>Human role</td><td>Provides labels upfront</td><td>Not required</td><td>Labels on demand</td></tr>
+<tr><td>Output</td><td>Class/value predictions</td><td>Clusters/patterns</td><td>Accurate model with few labels</td></tr>
+<tr><td>Examples</td><td>KNN, Decision Tree, SVM</td><td>K-Means, DBSCAN, PCA</td><td>Query-by-committee</td></tr>
+<tr><td>Use case</td><td>Spam detection, diagnosis</td><td>Customer segmentation</td><td>Medical image labeling</td></tr>
+</table>
+<h4>Active Learning — In Detail</h4>
+<p>Active learning is a semi-supervised machine learning paradigm where the learning algorithm can interactively <strong>query a human expert (oracle)</strong> to label specific data points it is uncertain about. This minimizes the labeling effort while maximizing model accuracy.</p>
+<div class="highlight">Active Learning Query Strategy: The model selects the most "uncertain" or "informative" unlabeled sample and asks the oracle to label it → Re-trains → Repeats.</div>
+</div></div>
+
+<!-- Q7 -->
+<div class="q-card" id="q7">
+<div class="q-header"><span class="q-num">Q 7</span><span class="q-text">Differentiate supervised and unsupervised learning.</span></div>
+<div class="q-body">
+<table>
+<tr><th>Parameter</th><th>Supervised Learning</th><th>Unsupervised Learning</th></tr>
+<tr><td>Training data</td><td>Labeled — input + output pairs</td><td>Unlabeled — input only</td></tr>
+<tr><td>Goal</td><td>Predict output for new input</td><td>Discover hidden patterns</td></tr>
+<tr><td>Feedback</td><td>Direct — compare with labels</td><td>No direct feedback</td></tr>
+<tr><td>Evaluation</td><td>Accuracy, Precision, Recall, F1</td><td>Silhouette score, Inertia</td></tr>
+<tr><td>Complexity</td><td>Easier to evaluate</td><td>Harder to validate</td></tr>
+<tr><td>Cost</td><td>High — labeling is expensive</td><td>Lower — no annotation needed</td></tr>
+<tr><td>Algorithms</td><td>Decision Tree, KNN, SVM, Naive Bayes</td><td>K-Means, DBSCAN, Hierarchical</td></tr>
+<tr><td>Applications</td><td>Email spam, Medical diagnosis</td><td>Customer segmentation, Anomaly detection</td></tr>
+</table>
+<div class="two-col">
+<div class="col-box"><strong>Supervised Analogy</strong><p>Like a student learning from a textbook with answers — clear right/wrong feedback.</p></div>
+<div class="col-box"><strong>Unsupervised Analogy</strong><p>Like sorting unknown objects into groups by similarity — no guide, only patterns.</p></div>
+</div>
+</div></div>
+
+<!-- Q8 -->
+<div class="q-card" id="q8">
+<div class="q-header"><span class="q-num">Q 8</span><span class="q-text">Discuss major issues/challenges in data mining.</span></div>
+<div class="q-body">
+<h3>Major Issues in Data Mining</h3>
+<div class="two-col">
+<div class="col-box"><strong>1. Mining Methodology</strong><p>Selecting appropriate mining techniques for different types of knowledge (classification vs clustering vs association) and data types.</p></div>
+<div class="col-box"><strong>2. User Interaction</strong><p>Providing proper querying languages, visualization tools, and interactive exploration for non-expert users.</p></div>
+<div class="col-box"><strong>3. Efficiency and Scalability</strong><p>Algorithms must scale to handle terabytes/petabytes of data within reasonable time using parallel/distributed computing.</p></div>
+<div class="col-box"><strong>4. Data Quality</strong><p>Dealing with noisy, incomplete, inconsistent, and redundant data. Poor data quality leads to poor mining results.</p></div>
+<div class="col-box"><strong>5. Privacy and Security</strong><p>Mining personal data raises ethical and legal concerns. Privacy-preserving data mining techniques are needed.</p></div>
+<div class="col-box"><strong>6. Diversity of Data Types</strong><p>Mining structured, semi-structured, unstructured data (text, images, spatial, temporal, web) requires specialized methods.</p></div>
+<div class="col-box"><strong>7. Interpretability</strong><p>Patterns discovered must be understandable by domain experts. Complex models (neural networks) are "black boxes".</p></div>
+<div class="col-box"><strong>8. Curse of Dimensionality</strong><p>As dimensions increase, data becomes sparse and distance metrics lose meaning, making clustering and classification harder.</p></div>
+</div>
+<div class="note">📌 Key exam point: Scalability and privacy are the two most critical modern challenges in data mining.</div>
+</div></div>
+
+
+<!-- ==================== SECTION 2: PRE-PROCESSING ==================== -->
+<div class="section-title" id="s2">Section 2 — Data Pre-Processing <span>Q9–Q16</span></div>
+
+<!-- Q9 -->
+<div class="q-card" id="q9">
+<div class="q-header"><span class="q-num">Q 9</span><span class="q-text">List common tasks involved in data pre-processing. Explain briefly any four tasks with suitable example.</span></div>
+<div class="q-body">
+<h3>Common Data Pre-Processing Tasks</h3>
+<ol><li>Data Cleaning</li><li>Data Integration</li><li>Data Transformation</li><li>Data Reduction</li><li>Data Discretization</li><li>Feature Selection</li></ol>
+<h3>1. Data Cleaning</h3>
+<p>Fills missing values, smooths noisy data, identifies/removes outliers, resolves inconsistencies.</p>
+<h4>Missing Value Handling</h4>
+<div class="formula">Methods:
+• Ignore the tuple (if class label is missing)
+• Fill manually
+• Use global constant (e.g., "Unknown")
+• Use attribute mean/median
+• Use most probable value (Bayesian / decision tree)
+
+Example: Age field is blank → Replace with mean age of dataset</div>
+<h4>Noisy Data Smoothing</h4>
+<div class="formula">Binning Methods:
+• Equal-width binning: divide range into equal-width intervals
+• Equal-frequency binning: each bin has same number of values
+• Regression: smooth by fitting data to regression function
+
+Example: Salary values [29000, 30000, 28500, 100000 (outlier)]
+→ Sort → 28500, 29000, 30000, 100000
+→ Bin: [28500, 29000, 30000] → replace with mean 29167</div>
+<h3>2. Data Integration</h3>
+<p>Combines data from multiple sources into a coherent data store. Challenges: entity identification (same entity in two databases), schema integration, handling redundancies.</p>
+<div class="formula">Example: Customer table in CRM system + Purchase table in ERP
+→ Integrate using customer_id as foreign key
+→ Detect redundancy: if Age can be derived from DOB, remove Age</div>
+<h3>3. Data Transformation</h3>
+<p>Transforms data into appropriate forms for mining. Includes normalization, aggregation, generalization, attribute construction.</p>
+<div class="formula">Min-Max Normalization:
+  v' = (v - min_A) / (max_A - min_A) × (new_max - new_min) + new_min
+
+Z-Score Normalization:
+  v' = (v - μ) / σ
+
+Example: Age 25, min=18, max=60 → (25-18)/(60-18) = 7/42 = 0.167</div>
+<h3>4. Data Reduction</h3>
+<p>Obtains a reduced representation that gives same or similar results. Methods: dimensionality reduction (PCA), numerosity reduction (sampling), data compression.</p>
+<div class="note">📌 Pre-processing typically consumes 60-80% of total data mining project time — "garbage in, garbage out".</div>
+</div></div>
+
+<!-- Q10 -->
+<div class="q-card" id="q10">
+<div class="q-header"><span class="q-num">Q 10</span><span class="q-text">Explain various data cleaning methods.</span></div>
+<div class="q-body">
+<h3>Data Cleaning</h3>
+<p>Data cleaning (or data cleansing) is the process of detecting and correcting corrupt, inaccurate, or irrelevant records from a dataset to improve data quality.</p>
+<h3>Methods for Handling Missing Values</h3>
+<table>
+<tr><th>Method</th><th>Description</th><th>When to Use</th></tr>
+<tr><td>Ignore the tuple</td><td>Delete records with missing values</td><td>When missing% is small</td></tr>
+<tr><td>Manual fill</td><td>Domain expert fills in values</td><td>Small datasets, critical data</td></tr>
+<tr><td>Global constant</td><td>Replace with "Unknown" or 0</td><td>Categorical attributes</td></tr>
+<tr><td>Attribute mean</td><td>Replace with mean of attribute</td><td>Numerical, normal distribution</td></tr>
+<tr><td>Class-based mean</td><td>Replace with mean from same class</td><td>When class is known</td></tr>
+<tr><td>Most probable value</td><td>Use Bayesian/decision tree inference</td><td>Best accuracy needed</td></tr>
+</table>
+<h3>Handling Noisy Data</h3>
+<h4>1. Binning</h4>
+<div class="formula">Sorted data: 4, 8, 9, 15, 21, 21, 24, 25, 26, 28, 29, 34
+Equal-frequency bins (4 values each):
+  Bin 1: 4, 8, 9, 15
+  Bin 2: 21, 21, 24, 25
+  Bin 3: 26, 28, 29, 34
+
+Smoothing by bin means:
+  Bin 1 → 9, 9, 9, 9
+  Bin 2 → 22.75, 22.75, 22.75, 22.75
+  Bin 3 → 29.25, 29.25, 29.25, 29.25</div>
+<h4>2. Regression</h4>
+<p>Fit data to a regression function to smooth out noise. Linear regression finds best-fit line; multiple regression uses multiple input attributes.</p>
+<h4>3. Clustering</h4>
+<p>Detect and remove outliers by identifying values that don't fall within any cluster.</p>
+<h4>4. Combined Computer and Human Inspection</h4>
+<p>Use automated tools to detect suspicious values, then have domain experts review flagged cases.</p>
+<h3>Handling Inconsistent Data</h3>
+<ul>
+<li>Use domain knowledge to identify violations (e.g., age cannot be negative)</li>
+<li>Cross-field validation rules (e.g., birth date must be before enrollment date)</li>
+<li>Reference external databases for correction</li>
+</ul>
+<div class="note">📌 Binning is the most commonly tested cleaning method. Know equal-width vs equal-frequency binning.</div>
+</div></div>
+
+<!-- Q11 -->
+<div class="q-card" id="q11">
+<div class="q-header"><span class="q-num">Q 11</span><span class="q-text">Give a list of data transformation strategies and explain any one in brief.</span></div>
+<div class="q-body">
+<h3>Data Transformation Strategies</h3>
+<ol><li>Smoothing</li><li>Attribute/Feature Construction</li><li>Aggregation</li><li>Normalization</li><li>Discretization</li><li>Concept Hierarchy Generation</li></ol>
+<h3>Normalization — In Detail</h3>
+<p><strong>Normalization</strong> scales attribute values to fall within a small specified range. It prevents attributes with large ranges from dominating those with small ranges in distance-based algorithms.</p>
+<h4>1. Min-Max Normalization</h4>
+<div class="formula">v' = [(v - min_A) / (max_A - min_A)] × (new_max_A - new_min_A) + new_min_A
+
+Maps value v to range [new_min_A, new_max_A]
+Preserves all relationships between original values</div>
+<h4>2. Z-Score (Zero-Mean) Normalization</h4>
+<div class="formula">v' = (v - μ_A) / σ_A
+
+μ_A = mean of attribute A
+σ_A = standard deviation of attribute A
+Useful when min/max are unknown or outliers exist</div>
+<h4>3. Decimal Scaling Normalization</h4>
+<div class="formula">v' = v / 10^j   where j = smallest integer such that max(|v'|) < 1
+
+Example: Values range from -986 to 917
+  j = 3 → divide all by 1000
+  -986 → -0.986, 917 → 0.917</div>
+<div class="note">📌 Min-Max is most commonly used. Z-score is preferred when data is normally distributed. Decimal scaling is simplest.</div>
+</div></div>
+
+<!-- Q12 -->
+<div class="q-card" id="q12">
+<div class="q-header"><span class="q-num">Q 12</span><span class="q-text">Define noise data. Enlist reasons for noise. Explain methods to deal with noise.</span></div>
+<div class="q-body">
+<h3>Noise Data</h3>
+<p><strong>Noise</strong> refers to random errors or variance in a measured variable — data that is incorrect, irrelevant, or misleading in a dataset.</p>
+<h3>Reasons for Noise in Data Collection</h3>
+<ul>
+<li>Faulty data collection instruments (broken sensors, miscalibrated devices)</li>
+<li>Human error during manual data entry</li>
+<li>Data transmission errors (network packet loss)</li>
+<li>Inconsistencies in naming conventions across sources</li>
+<li>Deliberate manipulation / data corruption</li>
+<li>System glitches during data logging</li>
+</ul>
+<h3>Methods to Deal with Noise</h3>
+<h4>1. Binning</h4>
+<p>Sort data and divide into bins. Smooth by bin mean, median, or boundaries.</p>
+<div class="formula">Example — Smoothing by bin boundary:
+Bin: [4, 8, 9, 15]  → min=4, max=15
+  4 → 4 (closer to min)
+  8 → 4 (closer to min)
+  9 → 15 (closer to max)
+  15 → 15</div>
+<h4>2. Regression</h4>
+<p>Use linear or polynomial regression to fit a smooth function to the data, filtering out random noise.</p>
+<h4>3. Clustering-Based Outlier Detection</h4>
+<p>Group data into clusters. Data points that are far from all cluster centers are treated as noise/outliers and removed.</p>
+<h4>4. Wavelet Transform</h4>
+<p>Decomposes data signal into frequency components. Low-frequency components represent smooth patterns; high-frequency components represent noise. Threshold the high-frequency coefficients to denoise.</p>
+</div></div>
+
+<!-- Q13 -->
+<div class="q-card" id="q13">
+<div class="q-header"><span class="q-num">Q 13</span><span class="q-text">What is an outlier? Why is outlier mining important?</span></div>
+<div class="q-body">
+<h3>Outlier Definition</h3>
+<p>An <strong>outlier</strong> is a data object that deviates significantly from the rest of the objects in the dataset — it is inconsistent with the general behavior or model of the data. Outliers are also called anomalies, exceptions, or noise points.</p>
+<div class="formula">Statistical definition: A value x is an outlier if:
+  x < Q1 - 1.5 × IQR   OR   x > Q3 + 1.5 × IQR
+where IQR = Q3 - Q1 (Interquartile Range)</div>
+<h3>Types of Outliers</h3>
+<div class="three-col">
+<div class="col-box"><strong>Point Outlier</strong><p>A single data point that differs greatly from the rest. Most common type. E.g., salary of ₹10 crore in a ₹50k avg dataset.</p></div>
+<div class="col-box"><strong>Contextual Outlier</strong><p>A data point is an outlier in a specific context but not otherwise. E.g., 35°C temperature is normal in June but outlier in December.</p></div>
+<div class="col-box"><strong>Collective Outlier</strong><p>A collection of related data objects that are collectively anomalous. E.g., sudden spike in network traffic (DDoS attack).</p></div>
+</div>
+<h3>Why Outlier Mining is Important</h3>
+<ul>
+<li><strong>Fraud Detection:</strong> Unusual credit card transactions indicate fraud</li>
+<li><strong>Medical Diagnosis:</strong> Abnormal patient readings indicate disease</li>
+<li><strong>Network Intrusion Detection:</strong> Unusual access patterns signal cyber attacks</li>
+<li><strong>Quality Control:</strong> Defective products show outlier measurements</li>
+<li><strong>Sports/Performance Analysis:</strong> Identify exceptional athletes or equipment failures</li>
+<li><strong>Data Cleaning:</strong> Outliers may represent data entry errors that need correction</li>
+</ul>
+<div class="warn">⚠️ Outliers should NOT always be removed — sometimes they represent the most valuable and interesting information (fraud, disease, discovery).</div>
+</div></div>
+
+<!-- Q14 -->
+<div class="q-card" id="q14">
+<div class="q-header"><span class="q-num">Q 14</span><span class="q-text">Explain the following terms: 1) Bias 2) Variance 3) Generalization 4) Outlier</span></div>
+<div class="q-body">
+<h3>1. Bias</h3>
+<p><strong>Bias</strong> is the error introduced by approximating a real-world problem (which may be complex) with a simplified model. A model with high bias pays little attention to training data and oversimplifies the problem — this leads to underfitting.</p>
+<div class="formula">High Bias → Underfitting → Model too simple → Low training AND test accuracy</div>
+<h3>2. Variance</h3>
+<p><strong>Variance</strong> is the error from sensitivity to small fluctuations in the training dataset. A model with high variance memorizes training data including noise, but fails on new data — this leads to overfitting.</p>
+<div class="formula">High Variance → Overfitting → Model too complex → High training accuracy, Low test accuracy</div>
+<h3>Bias-Variance Tradeoff</h3>
+<div class="diagram">
+<div class="diagram-title">Bias-Variance Tradeoff</div>
+<svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" width="100%">
+<line x1="40" y1="100" x2="460" y2="100" stroke="#e2e5ef" stroke-width="1.5"/>
+<line x1="40" y1="10" x2="40" y2="100" stroke="#e2e5ef" stroke-width="1.5"/>
+<text x="250" y="115" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" fill="#6b7280">Model Complexity →</text>
+<text x="15" y="55" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" fill="#6b7280" transform="rotate(-90,15,55)">Error</text>
+<path d="M50,20 Q150,30 250,60 Q350,85 450,95" fill="none" stroke="#1d6fa4" stroke-width="2"/>
+<text x="120" y="25" font-family="Outfit,sans-serif" font-size="10" fill="#1d6fa4">Bias²</text>
+<path d="M50,95 Q150,90 250,60 Q350,30 450,15" fill="none" stroke="#d94f4f" stroke-width="2"/>
+<text x="360" y="22" font-family="Outfit,sans-serif" font-size="10" fill="#d94f4f">Variance</text>
+<path d="M50,60 Q150,45 250,38 Q350,42 450,65" fill="none" stroke="#16a05e" stroke-width="2.5" stroke-dasharray="5 3"/>
+<text x="195" y="30" font-family="Outfit,sans-serif" font-size="10" fill="#16a05e">Total Error (Bias²+Var)</text>
+<line x1="250" y1="10" x2="250" y2="100" stroke="#c2610f" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="255" y="20" font-family="Outfit,sans-serif" font-size="10" fill="#c2610f">Optimal</text>
+</svg>
+</div>
+<h3>3. Generalization</h3>
+<p><strong>Generalization</strong> is the ability of a learned model to perform well on new, unseen data that was not part of the training set. A well-generalized model captures the true underlying patterns rather than memorizing training examples.</p>
+<div class="formula">Good Generalization = Low Bias + Low Variance (balance point)</div>
+<h3>4. Outlier</h3>
+<p>An <strong>outlier</strong> is a data point that deviates significantly from the majority of data. It can be caused by measurement errors, data entry mistakes, or genuinely rare events. In mining, outliers may represent fraud, disease, or exceptional performance.</p>
+</div></div>
+
+<!-- Q15 -->
+<div class="q-card" id="q15">
+<div class="q-header"><span class="q-num">Q 15</span><span class="q-text">What is the use of proximity measures? Explain any one with equation.</span></div>
+<div class="q-body">
+<h3>Proximity Measures</h3>
+<p><strong>Proximity measures</strong> quantify the degree of similarity or dissimilarity between two data objects. They are fundamental to clustering, classification (KNN), and anomaly detection algorithms.</p>
+<h3>Uses of Proximity Measures</h3>
+<ul>
+<li><strong>Clustering:</strong> Group similar objects; K-Means uses Euclidean distance to assign points to clusters</li>
+<li><strong>KNN Classification:</strong> Find k nearest neighbors to classify a new point</li>
+<li><strong>Anomaly Detection:</strong> Data objects far from all others are anomalies</li>
+<li><strong>Recommendation Systems:</strong> Find users with similar preferences</li>
+</ul>
+<h3>Types of Proximity Measures</h3>
+<table>
+<tr><th>Type</th><th>Measure</th><th>Used For</th></tr>
+<tr><td>Numerical</td><td>Euclidean, Manhattan, Minkowski</td><td>Continuous attributes</td></tr>
+<tr><td>Categorical</td><td>Hamming distance, Jaccard</td><td>Nominal attributes</td></tr>
+<tr><td>Text/Set</td><td>Cosine similarity, Jaccard</td><td>Document similarity</td></tr>
+<tr><td>Binary</td><td>Simple matching, Jaccard</td><td>Binary attributes</td></tr>
+</table>
+<h3>Euclidean Distance — Detailed Explanation</h3>
+<p>Euclidean distance is the most commonly used proximity measure. It measures the straight-line distance between two points in n-dimensional space.</p>
+<div class="formula">d(x, y) = √[Σᵢ(xᵢ - yᵢ)²]
+
+For 2D: d(x,y) = √[(x₁-y₁)² + (x₂-y₂)²]
+
+Example: Point A = (2, 4), Point B = (5, 8)
+d(A,B) = √[(2-5)² + (4-8)²]
+       = √[(-3)² + (-4)²]
+       = √[9 + 16]
+       = √25 = 5</div>
+<h4>Minkowski Distance (Generalization)</h4>
+<div class="formula">d(x,y) = [Σᵢ|xᵢ - yᵢ|^h]^(1/h)
+  h=1 → Manhattan (L1 norm)
+  h=2 → Euclidean (L2 norm)
+  h=∞ → Chebyshev (max dimension difference)</div>
+</div></div>
+
+<!-- Q16 -->
+<div class="q-card" id="q16">
+<div class="q-header"><span class="q-num">Q 16</span><span class="q-text">Define data cube and explain any 3 operations on it.</span></div>
+<div class="q-body">
+<h3>Data Cube</h3>
+<p>A <strong>data cube</strong> is a multi-dimensional data model used in OLAP (Online Analytical Processing) that allows data to be modeled and viewed in multiple dimensions. Each dimension represents an attribute, and each cell contains a measure (e.g., sales amount).</p>
+<div class="formula">A 3D data cube: Time × Location × Product → Sales
+Each (time, location, product) combination has a sales value</div>
+<h3>Data Cube Operations</h3>
+<h4>1. Roll-Up (Drill-Up)</h4>
+<p>Aggregates data by climbing up a concept hierarchy or by dimension reduction. Goes from lower level of detail to higher level.</p>
+<div class="formula">Roll-Up Example:
+  Day → Month → Quarter → Year (Time hierarchy)
+  City → State → Country (Location hierarchy)
+  
+  Roll up from City to Country: sum up sales for all cities in each country</div>
+<h4>2. Drill-Down (Roll-Down)</h4>
+<p>The reverse of roll-up. Navigates from higher level to finer-grained data for more detail.</p>
+<div class="formula">Drill-Down Example:
+  Year → Quarter → Month → Day
+  Sales by Year → Sales by Quarter (more detail)</div>
+<h4>3. Slice</h4>
+<p>Selects a single value for one dimension, resulting in a sub-cube with one fewer dimension.</p>
+<div class="formula">Slice Example: Fix Time = "Q1 2024"
+  Result: 2D cube of Location × Product for Q1 2024 only</div>
+<h4>4. Dice</h4>
+<p>Selects two or more values for multiple dimensions, resulting in a sub-cube.</p>
+<div class="formula">Dice Example: Time IN (Q1, Q2) AND Location IN (Mumbai, Delhi)
+  Result: Sub-cube with those specific values</div>
+<h4>5. Pivot (Rotate)</h4>
+<p>Rotates the data cube axes to provide an alternative presentation of the data.</p>
+<div class="note">📌 Roll-up = less detail (aggregation), Drill-down = more detail. Slice fixes one dimension, Dice fixes multiple.</div>
+</div></div>
+
+<!-- Q17 -->
+<div class="q-card" id="q17">
+<div class="q-header"><span class="q-num">Q 17</span><span class="q-text">Differentiate between data warehouse and data mart.</span></div>
+<div class="q-body">
+<table>
+<tr><th>Aspect</th><th>Data Warehouse</th><th>Data Mart</th></tr>
+<tr><td>Scope</td><td>Enterprise-wide (entire organization)</td><td>Department-specific (subset)</td></tr>
+<tr><td>Size</td><td>Very large (terabytes to petabytes)</td><td>Smaller (gigabytes to terabytes)</td></tr>
+<tr><td>Data Source</td><td>Multiple heterogeneous sources</td><td>Usually a subset of data warehouse</td></tr>
+<tr><td>Users</td><td>All departments and executives</td><td>Specific department (sales, HR, finance)</td></tr>
+<tr><td>Implementation</td><td>Complex, time-consuming (months-years)</td><td>Simpler, faster (weeks-months)</td></tr>
+<tr><td>Cost</td><td>High (millions)</td><td>Lower (thousands)</td></tr>
+<tr><td>Flexibility</td><td>More flexible for varied queries</td><td>Optimized for specific queries</td></tr>
+<tr><td>Example</td><td>Amazon's central data repository</td><td>Amazon's marketing analytics mart</td></tr>
+</table>
+<div class="highlight">Data Mart is essentially a focused, smaller version of a Data Warehouse that serves a specific business line or team.</div>
+</div></div>
+
+
+<!-- ==================== SECTION 3: ASSOCIATION RULES ==================== -->
+<div class="section-title" id="s3">Section 3 — Association Rule Mining <span>Q18–Q26</span></div>
+
+<!-- Q18 -->
+<div class="q-card" id="q18">
+<div class="q-header"><span class="q-num">Q 18</span><span class="q-text">Explain Support and Confidence measures with appropriate example.</span></div>
+<div class="q-body">
+<h3>Association Rule Mining Measures</h3>
+<p>Association rule mining finds interesting relationships between items in large transactional databases. Two key measures determine if a rule is interesting:</p>
+<h3>Support</h3>
+<p>Support measures how frequently an itemset appears in the database. It is the fraction of transactions containing the itemset.</p>
+<div class="formula">Support(A → B) = Support({A,B}) = (# transactions with both A and B) / (Total # transactions)
+
+Example Dataset (5 transactions):
+T1: {Bread, Butter, Milk}
+T2: {Bread, Butter}
+T3: {Bread, Milk}
+T4: {Butter, Milk}
+T5: {Bread, Butter, Milk}
+
+Support(Bread → Butter):
+  Transactions with both Bread AND Butter = T1, T2, T5 = 3
+  Support = 3/5 = 60%</div>
+<h3>Confidence</h3>
+<p>Confidence measures how often items in B appear in transactions that contain A. It is the conditional probability P(B|A).</p>
+<div class="formula">Confidence(A → B) = Support({A,B}) / Support({A})
+
+From above example:
+  Support(Bread) = T1, T2, T3, T5 = 4/5 = 80%
+  Support({Bread, Butter}) = T1, T2, T5 = 3/5 = 60%
+
+  Confidence(Bread → Butter) = 60% / 80% = 75%
+
+Interpretation: 75% of transactions that have Bread also have Butter.</div>
+<h3>Lift (Additional Measure)</h3>
+<div class="formula">Lift(A → B) = Confidence(A → B) / Support(B)
+
+Lift > 1 → Positive correlation (B is more likely with A)
+Lift = 1 → Independent (no relationship)
+Lift < 1 → Negative correlation (B less likely with A)</div>
+<div class="note">📌 A rule A→B is "strong" only if Support ≥ min_sup AND Confidence ≥ min_conf. Both must be satisfied.</div>
+</div></div>
+
+<!-- Q19 -->
+<div class="q-card" id="q19">
+<div class="q-header"><span class="q-num">Q 19</span><span class="q-text">Define market basket analysis. Explain support and confidence with suitable example for finding the rules.</span></div>
+<div class="q-body">
+<h3>Market Basket Analysis</h3>
+<p><strong>Market Basket Analysis</strong> (MBA) is a data mining technique used by retailers to discover purchasing patterns by finding products that customers frequently buy together. The goal is to identify associations between items purchased in the same transaction.</p>
+<h3>Real-World Application</h3>
+<ul>
+<li>Amazon "Customers who bought X also bought Y"</li>
+<li>Supermarket shelf placement optimization</li>
+<li>Cross-selling and promotional bundling</li>
+<li>Walmart famously discovered that beer and diapers were often bought together on Friday evenings</li>
+</ul>
+<h3>Complete Example with Support and Confidence</h3>
+<p>Transaction dataset (5 transactions, min_sup = 60%, min_conf = 80%):</p>
+<table>
+<tr><th>TID</th><th>Items Bought</th></tr>
+<tr><td>1</td><td>{M, O, N, K, E, Y}</td></tr>
+<tr><td>2</td><td>{D, O, N, K, E, Y}</td></tr>
+<tr><td>3</td><td>{M, A, K, E}</td></tr>
+<tr><td>4</td><td>{M, U, C, K, Y}</td></tr>
+<tr><td>5</td><td>{C, O, O, K, I, E}</td></tr>
+</table>
+<div class="calc-box">Step 1: Count item frequencies (min_sup = 60% = 3/5 = 3 transactions)
+  E: T1, T2, T3, T5 → count=4 ✓ (frequent)
+  K: T1, T2, T3, T4, T5 → count=5 ✓ (frequent)
+  M: T1, T3, T4 → count=3 ✓ (frequent)
+  O: T1, T2, T5 → count=3 ✓ (frequent)
+  Y: T1, T2, T4 → count=3 ✓ (frequent)
+  C: T4, T5 → count=2 ✗ (not frequent)
+  D, N, A, U, I → count &lt; 3 ✗ (not frequent)
+
+Step 2: Find frequent 2-itemsets:
+  {E,K}: T1, T2, T3, T5 → count=4 ✓
+  {K,M}: T1, T3, T4 → count=3 ✓
+  {E,Y}: T1, T2 → count=2 ✗
+  {K,Y}: T1, T2, T4 → count=3 ✓
+  {K,O}: T1, T2, T5 → count=3 ✓
+  {E,O}: T1, T2, T5 → count=3 ✓
+
+Step 3: Generate Rules (min_conf = 80%):
+  From {E,K}: 
+    E → K: conf = 4/4 = 100% ✓ STRONG RULE
+    K → E: conf = 4/5 = 80%  ✓ STRONG RULE
+  From {K,M}:
+    M → K: conf = 3/3 = 100% ✓ STRONG RULE
+    K → M: conf = 3/5 = 60%  ✗ (below 80%)
+  From {K,Y}:
+    Y → K: conf = 3/3 = 100% ✓ STRONG RULE
+    K → Y: conf = 3/5 = 60%  ✗</div>
+</div></div>
+
+<!-- Q20 -->
+<div class="q-card" id="q20">
+<div class="q-header"><span class="q-num">Q 20</span><span class="q-text">Using Apriori algorithm, find all frequent itemsets. (TID dataset: M,O,N,K,E,Y... min_sup=60%, min_conf=80%)</span></div>
+<div class="q-body">
+<h3>Apriori Algorithm</h3>
+<p>The <strong>Apriori algorithm</strong> is a classic algorithm for frequent itemset mining and association rule generation. It uses the Apriori Property: <em>All non-empty subsets of a frequent itemset must also be frequent.</em></p>
+<h3>Apriori Property (Anti-Monotone)</h3>
+<div class="formula">If itemset {A, B} is NOT frequent → {A, B, C} CANNOT be frequent
+(Any superset of an infrequent set is infrequent → prune it!)</div>
+<h3>Step-by-Step Solution</h3>
+<p>Dataset: 5 transactions, min_sup = 60% → minimum count = 3</p>
+<div class="calc-box">===== PASS 1: Generate C1 (1-itemsets) =====
+Scan all transactions and count each item:
+A:1, C:2, D:1, E:4, I:1, K:5, M:3, N:2, O:3, U:1, Y:3
+
+===== L1: Frequent 1-itemsets (count ≥ 3) =====
+{E}:4, {K}:5, {M}:3, {O}:3, {Y}:3
+
+===== PASS 2: Generate C2 from L1 =====
+(Combine every pair from L1)
+{E,K}, {E,M}, {E,O}, {E,Y}, {K,M}, {K,O}, {K,Y}, {M,O}, {M,Y}, {O,Y}
+
+Scan transactions and count:
+{E,K}: T1,T2,T3,T5 → 4 ✓
+{E,M}: T1,T3 → 2 ✗
+{E,O}: T1,T2,T5 → 3 ✓
+{E,Y}: T1,T2 → 2 ✗
+{K,M}: T1,T3,T4 → 3 ✓
+{K,O}: T1,T2,T5 → 3 ✓
+{K,Y}: T1,T2,T4 → 3 ✓
+{M,O}: T1 → 1 ✗
+{M,Y}: T1,T4 → 2 ✗
+{O,Y}: T1,T2 → 2 ✗
+
+===== L2: Frequent 2-itemsets =====
+{E,K}:4, {E,O}:3, {K,M}:3, {K,O}:3, {K,Y}:3
+
+===== PASS 3: Generate C3 from L2 =====
+(Merge pairs from L2 sharing same prefix)
+{E,K,O}: Check subsets {E,K}✓, {E,O}✓, {K,O}✓ → all frequent → include
+{K,O,Y}: Check {K,O}✓, {K,Y}✓, {O,Y}✗ → pruned!
+{E,K,M}: Check {E,K}✓, {E,M}✗ → pruned!
+
+Scan for {E,K,O}: T1,T2,T5 → count=3 ✓
+
+===== L3: Frequent 3-itemsets =====
+{E,K,O}:3
+
+No 4-itemsets possible → STOP
+
+===== FINAL FREQUENT ITEMSETS =====
+L1: {E}, {K}, {M}, {O}, {Y}
+L2: {E,K}, {E,O}, {K,M}, {K,O}, {K,Y}
+L3: {E,K,O}</div>
+<h3>Strong Association Rules (min_conf = 80%)</h3>
+<div class="calc-box">From {E,K,O} (support=3):
+  E,K → O: 3/4 = 75% ✗
+  E,O → K: 3/3 = 100% ✓ STRONG
+  K,O → E: 3/3 = 100% ✓ STRONG
+  E → K,O: 3/4 = 75% ✗
+  K → E,O: 3/5 = 60% ✗
+  O → E,K: 3/3 = 100% ✓ STRONG
+
+From {E,K} (support=4):
+  E → K: 4/4 = 100% ✓ STRONG
+  K → E: 4/5 = 80%  ✓ STRONG
+
+From {K,M} (support=3):
+  M → K: 3/3 = 100% ✓ STRONG
+  K → M: 3/5 = 60%  ✗
+
+From {K,Y} (support=3):
+  Y → K: 3/3 = 100% ✓ STRONG
+  K → Y: 3/5 = 60%  ✗</div>
+<div class="note">📌 Apriori uses BFS level-by-level. Key principle: prune candidate itemsets whose subsets are not frequent. This drastically reduces computation.</div>
+</div></div>
+
+<!-- Q21 -->
+<div class="q-card" id="q21">
+<div class="q-header"><span class="q-num">Q 21</span><span class="q-text">Define the Apriori Property. Generate candidate itemsets, frequent itemsets and association rules using Apriori algorithm. (BREAD, BUTTER, TOAST dataset, min_sup count=2, min_conf=60%)</span></div>
+<div class="q-body">
+<h3>Apriori Property</h3>
+<p><strong>Apriori Property (Anti-Monotone Property):</strong> If an itemset is infrequent, then ALL of its supersets must also be infrequent. Equivalently, all subsets of a frequent itemset must be frequent.</p>
+<div class="highlight">Apriori Property enables pruning: if {A} is infrequent → {A,B}, {A,C}, {A,B,C} are all infrequent → skip them without counting</div>
+<h3>Dataset</h3>
+<table>
+<tr><th>TID</th><th>Items</th></tr>
+<tr><td>T1</td><td>BREAD, BUTTER, TOAST</td></tr>
+<tr><td>T2</td><td>BUTTER, MILK</td></tr>
+<tr><td>T3</td><td>BUTTER, BISCUIT</td></tr>
+<tr><td>T4</td><td>BREAD, BUTTER, MILK</td></tr>
+<tr><td>T5</td><td>BREAD, BISCUIT</td></tr>
+<tr><td>T6</td><td>BUTTER, BISCUIT</td></tr>
+<tr><td>T7</td><td>BREAD, BISCUIT</td></tr>
+<tr><td>T8</td><td>BREAD, BUTTER, BISCUIT, TOAST</td></tr>
+<tr><td>T9</td><td>BREAD, BUTTER, BISCUIT</td></tr>
+</table>
+<p>Total transactions = 9, min_sup = 2, min_conf = 60%</p>
+<div class="calc-box">===== C1: All 1-itemsets with count =====
+BREAD: T1,T4,T5,T7,T8,T9 → 6
+BUTTER: T1,T2,T3,T4,T6,T8,T9 → 7
+TOAST: T1,T8 → 2
+MILK: T2,T4 → 2
+BISCUIT: T3,T5,T6,T7,T8,T9 → 6
+
+===== L1: Frequent 1-itemsets (count ≥ 2) =====
+{BREAD}:6, {BUTTER}:7, {TOAST}:2, {MILK}:2, {BISCUIT}:6
+
+===== C2: Candidate 2-itemsets (from L1 pairs) =====
+{BREAD,BUTTER}: T1,T4,T8,T9 → 4 ✓
+{BREAD,TOAST}: T1,T8 → 2 ✓
+{BREAD,MILK}: T4 → 1 ✗
+{BREAD,BISCUIT}: T5,T7,T8,T9 → 4 ✓
+{BUTTER,TOAST}: T1,T8 → 2 ✓
+{BUTTER,MILK}: T2,T4 → 2 ✓
+{BUTTER,BISCUIT}: T3,T6,T8,T9 → 4 ✓
+{TOAST,MILK}: none → 0 ✗
+{TOAST,BISCUIT}: T8 → 1 ✗
+{MILK,BISCUIT}: none → 0 ✗
+
+===== L2: Frequent 2-itemsets =====
+{BREAD,BUTTER}:4, {BREAD,TOAST}:2, {BREAD,BISCUIT}:4,
+{BUTTER,TOAST}:2, {BUTTER,MILK}:2, {BUTTER,BISCUIT}:4
+
+===== C3: Candidate 3-itemsets from L2 =====
+{BREAD,BUTTER,TOAST}: subsets {BREAD,BUTTER}✓,{BREAD,TOAST}✓,{BUTTER,TOAST}✓ → scan
+  T1,T8 → count=2 ✓
+{BREAD,BUTTER,BISCUIT}: subsets all ✓ → scan
+  T8,T9 → count=2 ✓
+{BREAD,BUTTER,MILK}: {BREAD,MILK}✗ → PRUNED
+{BUTTER,BISCUIT,TOAST}: {TOAST,BISCUIT}✗ → PRUNED
+
+===== L3: Frequent 3-itemsets =====
+{BREAD,BUTTER,TOAST}:2, {BREAD,BUTTER,BISCUIT}:2
+
+No 4-itemsets → STOP</div>
+<h3>Association Rules (min_conf = 60%)</h3>
+<div class="calc-box">From {BREAD,BUTTER,BISCUIT} (sup=2):
+  BREAD,BUTTER→BISCUIT: 2/4 = 50% ✗
+  BREAD,BISCUIT→BUTTER: 2/4 = 50% ✗
+  BUTTER,BISCUIT→BREAD: 2/4 = 50% ✗
+  BREAD→BUTTER,BISCUIT: 2/6 = 33% ✗
+  BUTTER→BREAD,BISCUIT: 2/7 = 29% ✗
+  BISCUIT→BREAD,BUTTER: 2/6 = 33% ✗
+
+From {BREAD,BUTTER}:
+  BREAD→BUTTER: 4/6 = 67% ✓ STRONG
+  BUTTER→BREAD: 4/7 = 57% ✗
+
+From {BUTTER,BISCUIT}:
+  BISCUIT→BUTTER: 4/6 = 67% ✓ STRONG
+  BUTTER→BISCUIT: 4/7 = 57% ✗
+
+From {BREAD,BISCUIT}:
+  BISCUIT→BREAD: 4/6 = 67% ✓ STRONG
+  BREAD→BISCUIT: 4/6 = 67% ✓ STRONG</div>
+</div></div>
+
+<!-- Q22 -->
+<div class="q-card" id="q22">
+<div class="q-header"><span class="q-num">Q 22</span><span class="q-text">How to improve efficiency of Apriori algorithm. Discuss in detail.</span></div>
+<div class="q-body">
+<h3>Bottlenecks of Basic Apriori</h3>
+<ul>
+<li>Multiple database scans (one per itemset level)</li>
+<li>Huge number of candidate itemsets generated</li>
+<li>Tedious workload of support counting</li>
+</ul>
+<h3>Efficiency Improvement Techniques</h3>
+<h4>1. Hash-Based Technique</h4>
+<p>Use a hash table to filter out infrequent itemsets early during candidate generation.</p>
+<div class="formula">During C1 scan, hash each 2-item combination into buckets.
+If bucket count < min_sup → all itemsets hashing to that bucket are infrequent → prune them.
+This reduces the size of C2 significantly without extra database scan.</div>
+<h4>2. Transaction Reduction</h4>
+<p>A transaction that does not contain any frequent k-itemset cannot contribute to frequent (k+1)-itemsets. Such transactions can be marked and ignored in subsequent scans.</p>
+<div class="formula">If transaction T contains no frequent 2-itemsets
+→ T cannot contribute to any frequent 3-itemset
+→ Remove T from database for pass 3+</div>
+<h4>3. Partitioning</h4>
+<p>Divide the database into non-overlapping partitions. Find locally frequent itemsets in each partition (only 2 database scans total).</p>
+<div class="formula">Phase 1: For each partition P, find locally frequent itemsets (1 scan)
+Phase 2: Count globally using candidate list from all partitions (1 scan)
+Key: A globally frequent itemset must be locally frequent in at least one partition</div>
+<h4>4. Sampling</h4>
+<p>Mine frequent itemsets on a sample of the database with a lower support threshold. Use the full database only to verify results.</p>
+<div class="formula">Use sample S with min_sup' < min_sup to ensure we don't miss frequent itemsets
+Verify on full database once with the candidate list</div>
+<h4>5. Dynamic Itemset Counting (DIC)</h4>
+<p>Add new candidate itemsets at any point during the database scan, not just at the start of each pass. Reduces the number of database scans.</p>
+<h4>6. FP-Growth Algorithm</h4>
+<p>The most efficient alternative to Apriori. Compresses the database into an FP-Tree structure. Only 2 database scans needed. No candidate generation required.</p>
+<div class="formula">FP-Growth advantages:
+  • No candidate generation (no combinatorial explosion)
+  • Only 2 database scans
+  • Compressed FP-Tree fits in memory
+  • Divide-and-conquer approach</div>
+<div class="note">📌 Hash-based technique is the most commonly asked efficiency improvement in exams. FP-Growth is the best overall alternative.</div>
+</div></div>
+
+<!-- Q23 -->
+<div class="q-card" id="q23">
+<div class="q-header"><span class="q-num">Q 23</span><span class="q-text">Discuss Hash-Based technique to improve efficiency of Apriori algorithm.</span></div>
+<div class="q-body">
+<h3>Hash-Based Technique</h3>
+<p>The hash-based technique was proposed by Park, Chen and Yu (1995) to reduce the number of candidate 2-itemsets during the Apriori algorithm, which is typically the largest and most expensive set to process.</p>
+<h3>Core Idea</h3>
+<p>While scanning the database to count 1-itemsets (C1), simultaneously hash each pair of items into a hash table. If the hash bucket count is below min_sup, then no 2-itemset that hashes to that bucket can be frequent — so we can prune the entire bucket's candidates.</p>
+<h3>Hash-Based Algorithm Steps</h3>
+<ol class="step-list">
+<li>During scan for C1: For each transaction T, generate all pairs (i,j) and hash them to bucket h(i,j)</li>
+<li>Increment the count of each hash bucket</li>
+<li>After scan: Any bucket with count &lt; min_sup cannot contain any frequent 2-itemset → mark as invalid</li>
+<li>Generate C2: Only include 2-itemsets that hash to valid (high-count) buckets</li>
+<li>Scan database to get exact counts for C2 candidates</li>
+</ol>
+<div class="formula">Hash Function Example: h(i, j) = (order(i) × 10 + order(j)) mod 7
+
+Transaction {A, B, C, D}:
+  Pairs: AB, AC, AD, BC, BD, CD
+  h(A,B) = bucket 0
+  h(A,C) = bucket 1  ... etc.
+
+After full database scan:
+  Bucket 0 count = 5 (≥ min_sup=3) → keep
+  Bucket 3 count = 1 (&lt; min_sup) → prune all candidates in bucket 3</div>
+<h3>Benefit</h3>
+<div class="diagram">
+<div class="diagram-title">Hash-Based Pruning Effect on C2</div>
+<svg viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg" width="100%">
+<rect x="10" y="20" width="140" height="60" rx="8" fill="rgba(217,79,79,0.08)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="80" y="43" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#d94f4f">Without Hashing</text>
+<text x="80" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" fill="#d94f4f">C2 = n(n-1)/2</text>
+<text x="80" y="74" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#d94f4f">All pairs</text>
+<text x="185" y="55" text-anchor="middle" font-family="Outfit,sans-serif" font-size="20" fill="#1d6fa4">→</text>
+<rect x="210" y="20" width="160" height="60" rx="8" fill="rgba(29,111,164,0.08)" stroke="rgba(29,111,164,0.3)" stroke-width="1"/>
+<text x="290" y="43" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">Hash Filter</text>
+<text x="290" y="58" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" fill="#1d6fa4">Prune low-count</text>
+<text x="290" y="72" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#1d6fa4">bucket candidates</text>
+<text x="395" y="55" text-anchor="middle" font-family="Outfit,sans-serif" font-size="20" fill="#1d6fa4">→</text>
+<rect x="410" y="20" width="80" height="60" rx="8" fill="rgba(22,160,94,0.1)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="450" y="43" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#16a05e">Smaller C2</text>
+<text x="450" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" fill="#16a05e">Reduced</text>
+<text x="450" y="73" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#16a05e">I/O cost</text>
+</svg>
+</div>
+<div class="note">📌 Hash-based technique is most effective for reducing C2 (2-itemsets) which is typically the largest candidate set.</div>
+</div></div>
+
+
+<!-- Q24 -->
+<div class="q-card" id="q24">
+<div class="q-header"><span class="q-num">Q 24</span><span class="q-text">Explain the Apriori property. Generate candidate itemsets, frequent itemsets and association rules. (TID dataset, min_sup=60%, min_conf=80%)</span></div>
+<div class="q-body">
+<h3>Apriori Property (Anti-Monotone)</h3>
+<p>The Apriori property states: <strong>If an itemset is frequent, then all of its subsets must also be frequent.</strong> Equivalently, if any subset of an itemset is infrequent, then the entire itemset cannot be frequent and can be pruned.</p>
+<div class="highlight">If {A,B} is infrequent → {A,B,C} is definitely infrequent → skip counting it.<br>This prunes the search space exponentially and makes Apriori efficient.</div>
+<h3>Dataset (5 Transactions, min_sup=60%=3, min_conf=80%)</h3>
+<table>
+<tr><th>TID</th><th>Items</th></tr>
+<tr><td>1</td><td>M, O, N, K, E, Y</td></tr>
+<tr><td>2</td><td>D, O, N, K, E, Y</td></tr>
+<tr><td>3</td><td>M, A, K, E</td></tr>
+<tr><td>4</td><td>M, U, C, K, Y</td></tr>
+<tr><td>5</td><td>C, O, O, K, I, E</td></tr>
+</table>
+<div class="calc-box">PASS 1 → C1 (1-itemsets):
+  E:4, K:5, M:3, O:3, Y:3 → ALL FREQUENT (≥3)
+  A:1, C:2, D:1, I:1, N:2, U:1 → NOT FREQUENT
+
+L1 = {E}:4, {K}:5, {M}:3, {O}:3, {Y}:3
+
+PASS 2 → C2 (all pairs from L1):
+  {E,K}:4✓  {E,M}:2✗  {E,O}:3✓  {E,Y}:2✗
+  {K,M}:3✓  {K,O}:3✓  {K,Y}:3✓
+  {M,O}:1✗  {M,Y}:2✗  {O,Y}:2✗
+
+L2 = {E,K}:4, {E,O}:3, {K,M}:3, {K,O}:3, {K,Y}:3
+
+PASS 3 → C3 (merge L2 pairs sharing prefix):
+  {E,K,O}: subsets {E,K}✓,{E,O}✓,{K,O}✓ → scan → T1,T2,T5=3 ✓
+  {K,M,O}: {K,M}✓,{K,O}✓,{M,O}✗ → PRUNED
+  {K,O,Y}: {K,O}✓,{K,Y}✓,{O,Y}✗ → PRUNED
+
+L3 = {E,K,O}:3
+
+No 4-itemsets possible → STOP
+
+STRONG RULES from {E,K,O} (sup=3/5=60%):
+  E,O→K: conf=3/3=100% ✓ STRONG
+  K,O→E: conf=3/3=100% ✓ STRONG
+  O→E,K: conf=3/3=100% ✓ STRONG
+  E,K→O: conf=3/4=75% ✗
+  E→K,O: conf=3/4=75% ✗
+  K→E,O: conf=3/5=60% ✗
+
+From L2:
+  E→K: 4/4=100% ✓   K→E: 4/5=80% ✓
+  M→K: 3/3=100% ✓   Y→K: 3/3=100% ✓
+  O→K: 3/3=100% ✓</div>
+</div></div>
+
+<!-- Q25 -->
+<div class="q-card" id="q25">
+<div class="q-header"><span class="q-num">Q 25</span><span class="q-text">Explain data mining features in WEKA / Write a note on data mining applications (variant).</span></div>
+<div class="q-body">
+<h3>Refer to Q52 for WEKA features and Q54 for Data Mining Applications.</h3>
+<h3>Additional: WEKA Interface Overview</h3>
+<div class="two-col">
+<div class="col-box"><strong>Explorer</strong><p>Main interface with 6 tabs: Preprocess, Classify, Cluster, Associate, Select Attributes, Visualize. Best for interactive analysis.</p></div>
+<div class="col-box"><strong>Experimenter</strong><p>Run and compare multiple classifiers on multiple datasets automatically. Performs statistical significance tests.</p></div>
+<div class="col-box"><strong>Knowledge Flow</strong><p>Visual drag-and-drop pipeline designer for building complex data flow pipelines.</p></div>
+<div class="col-box"><strong>Workbench</strong><p>Unified interface combining Explorer, Experimenter, and Knowledge Flow.</p></div>
+</div>
+<h3>ARFF File Format (WEKA Native)</h3>
+<div class="formula">@relation weather
+@attribute outlook {sunny, overcast, rain}
+@attribute temperature numeric
+@attribute humidity numeric
+@attribute windy {TRUE, FALSE}
+@attribute play {yes, no}
+@data
+sunny,85,85,FALSE,no
+overcast,83,86,FALSE,yes
+rain,70,96,FALSE,yes</div>
+<div class="note">📌 WEKA's J48 = C4.5 algorithm. IBk = KNN. SMO = SVM. All classic algorithms are available with default and configurable parameters.</div>
+</div></div>
+
+<!-- Q26 -->
+<div class="q-card" id="q26">
+<div class="q-header"><span class="q-num">Q 26</span><span class="q-text">Explain Support and Confidence — additional variant with MONKEY dataset.</span></div>
+<div class="q-body">
+<h3>Complete Support &amp; Confidence Reference</h3>
+<p>Using the 5-transaction MONKEY dataset (T1–T5 from Q20):</p>
+<div class="formula">Support(X) = (# transactions containing X) / (Total transactions)
+
+For single items:
+  Support(K) = 5/5 = 100%   Support(E) = 4/5 = 80%
+  Support(M) = 3/5 = 60%    Support(O) = 3/5 = 60%
+  Support(Y) = 3/5 = 60%
+
+For itemsets:
+  Support({E,K}) = 4/5 = 80%
+  Support({K,M}) = 3/5 = 60%
+  Support({E,K,O}) = 3/5 = 60%
+
+Confidence(A→B) = Support({A,B}) / Support(A)
+
+Examples:
+  Conf(E→K) = Support({E,K})/Support(E) = (4/5)/(4/5) = 100%
+  Conf(K→E) = Support({E,K})/Support(K) = (4/5)/(5/5) = 80%
+  Conf(M→K) = Support({K,M})/Support(M) = (3/5)/(3/5) = 100%
+
+Lift(A→B) = Confidence(A→B) / Support(B)
+  Lift(E→K) = 100% / 100% = 1.0 (independent)
+  Lift(M→K) = 100% / 100% = 1.0</div>
+<div class="note">📌 Support measures how often a rule applies (frequency). Confidence measures how reliable the rule is (strength). Lift > 1 means positive correlation beyond chance.</div>
+</div></div>
+
+<!-- ==================== SECTION 4: CLASSIFICATION ==================== -->
+<div class="section-title" id="s4">Section 4 — Classification <span>Q27–Q42</span></div>
+
+<!-- Q27 -->
+<div class="q-card" id="q27">
+<div class="q-header"><span class="q-num">Q 27</span><span class="q-text">How does classification differ from prediction? Explain phases of classification.</span></div>
+<div class="q-body">
+<h3>Classification vs Prediction</h3>
+<table>
+<tr><th>Aspect</th><th>Classification</th><th>Prediction</th></tr>
+<tr><td>Output type</td><td>Discrete/categorical labels (Yes/No, Class A/B/C)</td><td>Continuous numerical values</td></tr>
+<tr><td>Goal</td><td>Assign a class label to new instances</td><td>Predict a value for new instances</td></tr>
+<tr><td>Method</td><td>Decision trees, KNN, Naive Bayes, SVM</td><td>Linear regression, neural networks</td></tr>
+<tr><td>Evaluation</td><td>Accuracy, Precision, Recall, F1</td><td>MAE, RMSE, R²</td></tr>
+<tr><td>Example</td><td>"Is this email spam?" → Yes/No</td><td>"What will tomorrow's temperature be?" → 28.5°C</td></tr>
+</table>
+<h3>Phases of Classification</h3>
+<h4>Phase 1: Learning Phase (Training)</h4>
+<ol class="step-list">
+<li>Collect a training dataset with labeled instances (each record has known class label)</li>
+<li>Select a classification algorithm (Decision Tree, KNN, Naive Bayes, etc.)</li>
+<li>Apply algorithm to training data to build a classification model (classifier)</li>
+<li>The classifier captures patterns distinguishing each class</li>
+</ol>
+<h4>Phase 2: Classification Phase (Testing)</h4>
+<ol class="step-list">
+<li>Use test dataset (unseen data with known labels) to evaluate the classifier</li>
+<li>Apply the classifier to each test instance to predict its class</li>
+<li>Compare predicted class with actual class label</li>
+<li>Calculate accuracy = (correctly classified) / (total test instances)</li>
+<li>If accuracy is acceptable, apply classifier to new, unknown data</li>
+</ol>
+<div class="diagram">
+<div class="diagram-title">Classification Pipeline</div>
+<svg viewBox="0 0 680 80" xmlns="http://www.w3.org/2000/svg" width="100%">
+<defs><marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#1d6fa4" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+<rect x="5" y="22" width="100" height="34" rx="7" fill="rgba(22,160,94,0.1)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="55" y="43" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#16a05e">Training Data</text>
+<line x1="107" y1="39" x2="125" y2="39" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a2)"/>
+<rect x="127" y="22" width="110" height="34" rx="7" fill="rgba(29,111,164,0.08)" stroke="rgba(29,111,164,0.25)" stroke-width="1"/>
+<text x="182" y="36" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">Classification</text>
+<text x="182" y="50" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">Algorithm</text>
+<line x1="239" y1="39" x2="257" y2="39" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a2)"/>
+<rect x="259" y="22" width="100" height="34" rx="7" fill="rgba(194,97,15,0.08)" stroke="rgba(194,97,15,0.3)" stroke-width="1"/>
+<text x="309" y="36" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#c2610f">Classifier</text>
+<text x="309" y="50" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#c2610f">(Model)</text>
+<line x1="361" y1="39" x2="379" y2="39" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a2)"/>
+<rect x="381" y="22" width="100" height="34" rx="7" fill="rgba(8,145,178,0.08)" stroke="rgba(8,145,178,0.3)" stroke-width="1"/>
+<text x="431" y="36" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#0891b2">Test Data</text>
+<text x="431" y="50" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#0891b2">(New Input)</text>
+<line x1="483" y1="39" x2="501" y2="39" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a2)"/>
+<rect x="503" y="22" width="110" height="34" rx="7" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="1.5"/>
+<text x="558" y="36" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#16a05e">Predicted</text>
+<text x="558" y="50" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#16a05e">Class Label</text>
+</svg>
+</div>
+</div></div>
+
+<!-- Q28 -->
+<div class="q-card" id="q28">
+<div class="q-header"><span class="q-num">Q 28</span><span class="q-text">What is classification? Discuss phases of classification.</span></div>
+<div class="q-body">
+<h3>Classification</h3>
+<p><strong>Classification</strong> is a supervised data mining task that builds a model (classifier) from labeled training data, which is then used to predict the class label of new, unknown instances. The output class is always a discrete/categorical value.</p>
+<h3>Examples of Classification Problems</h3>
+<ul>
+<li>Email → Spam or Ham</li>
+<li>Loan application → Approve or Reject</li>
+<li>Medical image → Malignant or Benign tumor</li>
+<li>Transaction → Fraud or Legitimate</li>
+<li>News article → Sports / Politics / Technology</li>
+</ul>
+<h3>Phases of Classification (Detailed)</h3>
+<h4>Phase 1: Model Construction (Learning)</h4>
+<p>Each tuple/sample in the training set has a class label. The classifier is trained to learn the mapping from attribute values to class labels. The training set is used exclusively for learning.</p>
+<h4>Phase 2: Model Usage (Classification)</h4>
+<p>The trained model is evaluated using a test set independent of training data. Estimated accuracy is calculated. If accuracy is acceptable, the model is deployed on new data.</p>
+<div class="formula">Accuracy = (Number of correctly classified test tuples) / (Total test tuples) × 100%
+
+Rule of Thumb:
+  Training : Test split = 70:30 or 80:20 (holdout method)
+  Or use k-fold cross-validation for more reliable estimates</div>
+<h3>Performance Metrics</h3>
+<table>
+<tr><th>Metric</th><th>Formula</th><th>Meaning</th></tr>
+<tr><td>Accuracy</td><td>(TP+TN)/(TP+TN+FP+FN)</td><td>Overall correct predictions</td></tr>
+<tr><td>Precision</td><td>TP/(TP+FP)</td><td>Of predicted positives, how many are correct</td></tr>
+<tr><td>Recall (Sensitivity)</td><td>TP/(TP+FN)</td><td>Of actual positives, how many were found</td></tr>
+<tr><td>F1-Score</td><td>2×(P×R)/(P+R)</td><td>Harmonic mean of Precision and Recall</td></tr>
+<tr><td>Specificity</td><td>TN/(TN+FP)</td><td>Of actual negatives, how many were correctly identified</td></tr>
+</table>
+</div></div>
+
+<!-- Q29 -->
+<div class="q-card" id="q29">
+<div class="q-header"><span class="q-num">Q 29</span><span class="q-text">List accuracy parameters for performance evaluation of classification and discuss any five with example.</span></div>
+<div class="q-body">
+<h3>Confusion Matrix</h3>
+<p>All accuracy metrics are derived from the confusion matrix:</p>
+<table>
+<tr><th></th><th>Predicted Positive</th><th>Predicted Negative</th></tr>
+<tr><td><strong>Actual Positive</strong></td><td>TP (True Positive)</td><td>FN (False Negative)</td></tr>
+<tr><td><strong>Actual Negative</strong></td><td>FP (False Positive)</td><td>TN (True Negative)</td></tr>
+</table>
+<h3>1. Accuracy</h3>
+<div class="formula">Accuracy = (TP + TN) / (TP + TN + FP + FN)
+Example: TP=80, TN=60, FP=10, FN=20
+Accuracy = (80+60)/(80+60+10+20) = 140/170 = 82.4%</div>
+<h3>2. Precision (Positive Predictive Value)</h3>
+<div class="formula">Precision = TP / (TP + FP)
+Example: TP=80, FP=10
+Precision = 80/90 = 88.9%
+"Of all spam predicted, 88.9% were actually spam"</div>
+<h3>3. Recall (Sensitivity / True Positive Rate)</h3>
+<div class="formula">Recall = TP / (TP + FN)
+Example: TP=80, FN=20
+Recall = 80/100 = 80%
+"Of all actual spam, 80% were correctly identified"</div>
+<h3>4. F1-Score</h3>
+<div class="formula">F1 = 2 × (Precision × Recall) / (Precision + Recall)
+F1 = 2 × (0.889 × 0.80) / (0.889 + 0.80)
+F1 = 2 × 0.711 / 1.689 = 84.2%
+"Harmonic mean balances precision and recall"</div>
+<h3>5. Specificity (True Negative Rate)</h3>
+<div class="formula">Specificity = TN / (TN + FP)
+Example: TN=60, FP=10
+Specificity = 60/70 = 85.7%
+"Of all actual non-spam, 85.7% were correctly identified as non-spam"</div>
+<h3>6. ROC Curve and AUC</h3>
+<p>ROC (Receiver Operating Characteristic) curve plots TPR (Recall) vs FPR (1-Specificity) at various threshold values. AUC (Area Under Curve) = 1 means perfect classifier; AUC = 0.5 means random guessing.</p>
+<div class="note">📌 For imbalanced datasets, F1-Score and AUC are better metrics than accuracy.</div>
+</div></div>
+
+<!-- Q30 -->
+<div class="q-card" id="q30">
+<div class="q-header"><span class="q-num">Q 30</span><span class="q-text">Define True Positive, True Negative, False Positive and False Negative.</span></div>
+<div class="q-body">
+<h3>Confusion Matrix Terms</h3>
+<p>Using spam detection as example (Positive = Spam, Negative = Not Spam):</p>
+<div class="two-col">
+<div class="col-box"><strong>True Positive (TP)</strong><p>Actual: Spam → Predicted: Spam ✓<br>The model correctly identified spam as spam. <strong>Correct prediction for positive class.</strong></p></div>
+<div class="col-box"><strong>True Negative (TN)</strong><p>Actual: Not Spam → Predicted: Not Spam ✓<br>The model correctly identified non-spam as non-spam. <strong>Correct prediction for negative class.</strong></p></div>
+<div class="col-box"><strong>False Positive (FP) — Type I Error</strong><p>Actual: Not Spam → Predicted: Spam ✗<br>Legitimate email goes to spam folder. <strong>Incorrect — falsely predicted positive.</strong></p></div>
+<div class="col-box"><strong>False Negative (FN) — Type II Error</strong><p>Actual: Spam → Predicted: Not Spam ✗<br>Spam email reaches inbox. <strong>Incorrect — missed a positive case.</strong></p></div>
+</div>
+<table>
+<tr><th>Term</th><th>Actual Class</th><th>Predicted Class</th><th>Result</th></tr>
+<tr><td>True Positive (TP)</td><td>Positive</td><td>Positive</td><td>✓ Correct</td></tr>
+<tr><td>True Negative (TN)</td><td>Negative</td><td>Negative</td><td>✓ Correct</td></tr>
+<tr><td>False Positive (FP)</td><td>Negative</td><td>Positive</td><td>✗ Wrong (Type I Error)</td></tr>
+<tr><td>False Negative (FN)</td><td>Positive</td><td>Negative</td><td>✗ Wrong (Type II Error)</td></tr>
+</table>
+<div class="warn">⚠️ In medical diagnosis, False Negative (missing a disease) is more dangerous than False Positive (wrong alarm). So Recall is prioritized over Precision in medical applications.</div>
+</div></div>
+
+<!-- Q31 -->
+<div class="q-card" id="q31">
+<div class="q-header"><span class="q-num">Q 31</span><span class="q-text">Explain working of decision tree algorithm with suitable example.</span></div>
+<div class="q-body">
+<h3>Decision Tree</h3>
+<p>A <strong>decision tree</strong> is a tree-shaped classification model where each internal node represents a test on an attribute, each branch represents an outcome of the test, and each leaf node represents a class label.</p>
+<h3>Key Concepts</h3>
+<div class="two-col">
+<div class="col-box"><strong>Information Gain</strong><p>Measures the reduction in entropy after splitting on an attribute. Higher gain = better split attribute.</p></div>
+<div class="col-box"><strong>Entropy</strong><p>Measures impurity/disorder of a dataset. Entropy=0 → pure node. Entropy=1 → maximum disorder.</p></div>
+</div>
+<div class="formula">Entropy(S) = -Σ pᵢ × log₂(pᵢ)
+where pᵢ = proportion of class i in set S
+
+For binary class (p positive, n negative):
+Entropy(S) = -(p/(p+n))×log₂(p/(p+n)) - (n/(p+n))×log₂(n/(p+n))
+
+Information Gain:
+Gain(S, A) = Entropy(S) - Σ [|Sᵥ|/|S|] × Entropy(Sᵥ)
+where Sᵥ = subset of S where attribute A has value v</div>
+<h3>Example — Play Tennis Dataset</h3>
+<table>
+<tr><th>Day</th><th>Outlook</th><th>Temp</th><th>Humidity</th><th>Wind</th><th>Play?</th></tr>
+<tr><td>D1</td><td>Sunny</td><td>Hot</td><td>High</td><td>Weak</td><td>No</td></tr>
+<tr><td>D2</td><td>Sunny</td><td>Hot</td><td>High</td><td>Strong</td><td>No</td></tr>
+<tr><td>D3</td><td>Overcast</td><td>Hot</td><td>High</td><td>Weak</td><td>Yes</td></tr>
+<tr><td>D4</td><td>Rain</td><td>Mild</td><td>High</td><td>Weak</td><td>Yes</td></tr>
+<tr><td>D5</td><td>Rain</td><td>Cool</td><td>Normal</td><td>Weak</td><td>Yes</td></tr>
+<tr><td>D6</td><td>Rain</td><td>Cool</td><td>Normal</td><td>Strong</td><td>No</td></tr>
+<tr><td>D7</td><td>Overcast</td><td>Cool</td><td>Normal</td><td>Strong</td><td>Yes</td></tr>
+<tr><td>D8</td><td>Sunny</td><td>Mild</td><td>High</td><td>Weak</td><td>No</td></tr>
+<tr><td>D9</td><td>Sunny</td><td>Cool</td><td>Normal</td><td>Weak</td><td>Yes</td></tr>
+<tr><td>D10</td><td>Rain</td><td>Mild</td><td>Normal</td><td>Weak</td><td>Yes</td></tr>
+<tr><td>D11</td><td>Sunny</td><td>Mild</td><td>Normal</td><td>Strong</td><td>Yes</td></tr>
+<tr><td>D12</td><td>Overcast</td><td>Mild</td><td>High</td><td>Strong</td><td>Yes</td></tr>
+<tr><td>D13</td><td>Overcast</td><td>Hot</td><td>Normal</td><td>Weak</td><td>Yes</td></tr>
+<tr><td>D14</td><td>Rain</td><td>Mild</td><td>High</td><td>Strong</td><td>No</td></tr>
+</table>
+<div class="calc-box">Total: 14 instances, 9 Yes, 5 No
+
+Entropy(S) = -(9/14)×log₂(9/14) - (5/14)×log₂(5/14)
+           = -(0.643)×(-0.637) - (0.357)×(-1.485)
+           = 0.410 + 0.530 = 0.940
+
+Gain(S, Outlook):
+  Sunny:    5 instances (2Y, 3N) → E = -(2/5)log₂(2/5)-(3/5)log₂(3/5) = 0.971
+  Overcast: 4 instances (4Y, 0N) → E = 0 (pure!)
+  Rain:     5 instances (3Y, 2N) → E = 0.971
+
+  Gain = 0.940 - [5/14×0.971 + 4/14×0 + 5/14×0.971]
+       = 0.940 - [0.347 + 0 + 0.347] = 0.940 - 0.694 = 0.246
+
+Gain(S, Humidity):
+  High:   7 instances (3Y, 4N) → E = 0.985
+  Normal: 7 instances (6Y, 1N) → E = 0.592
+  Gain = 0.940 - [7/14×0.985 + 7/14×0.592]
+       = 0.940 - [0.493 + 0.296] = 0.151
+
+WINNER: Outlook (Gain = 0.246) → Root Node = Outlook</div>
+<div class="diagram">
+<div class="diagram-title">Decision Tree — Play Tennis</div>
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" width="100%">
+<rect x="185" y="5" width="130" height="35" rx="8" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.4)" stroke-width="1.5"/>
+<text x="250" y="27" text-anchor="middle" font-family="Outfit,sans-serif" font-size="13" font-weight="700" fill="#1d6fa4">Outlook</text>
+<line x1="200" y1="40" x2="120" y2="85" stroke="#1d6fa4" stroke-width="1.5"/>
+<line x1="250" y1="40" x2="250" y2="85" stroke="#1d6fa4" stroke-width="1.5"/>
+<line x1="300" y1="40" x2="380" y2="85" stroke="#1d6fa4" stroke-width="1.5"/>
+<text x="145" y="70" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">Sunny</text>
+<text x="250" y="72" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">Overcast</text>
+<text x="345" y="70" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">Rain</text>
+<rect x="65" y="86" width="110" height="32" rx="7" fill="rgba(8,145,178,0.1)" stroke="rgba(8,145,178,0.3)" stroke-width="1"/>
+<text x="120" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="12" font-weight="600" fill="#0891b2">Humidity</text>
+<rect x="200" y="86" width="100" height="32" rx="7" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="1.5"/>
+<text x="250" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="12" font-weight="700" fill="#16a05e">YES ✓</text>
+<rect x="330" y="86" width="100" height="32" rx="7" fill="rgba(194,97,15,0.1)" stroke="rgba(194,97,15,0.3)" stroke-width="1"/>
+<text x="380" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="12" font-weight="600" fill="#c2610f">Wind</text>
+<line x1="90" y1="118" x2="70" y2="155" stroke="#0891b2" stroke-width="1.2"/>
+<line x1="150" y1="118" x2="170" y2="155" stroke="#0891b2" stroke-width="1.2"/>
+<text x="72" y="143" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">High</text>
+<text x="170" y="143" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">Normal</text>
+<rect x="25" y="156" width="70" height="28" rx="6" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="60" y="174" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#d94f4f">NO</text>
+<rect x="130" y="156" width="70" height="28" rx="6" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="1"/>
+<text x="165" y="174" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#16a05e">YES</text>
+<line x1="360" y1="118" x2="345" y2="155" stroke="#c2610f" stroke-width="1.2"/>
+<line x1="400" y1="118" x2="415" y2="155" stroke="#c2610f" stroke-width="1.2"/>
+<text x="338" y="143" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">Weak</text>
+<text x="418" y="143" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">Strong</text>
+<rect x="308" y="156" width="70" height="28" rx="6" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="1"/>
+<text x="343" y="174" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#16a05e">YES</text>
+<rect x="390" y="156" width="70" height="28" rx="6" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="425" y="174" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#d94f4f">NO</text>
+</svg>
+</div>
+<div class="note">📌 ID3 uses Information Gain. C4.5 uses Gain Ratio (handles multi-valued attributes). CART uses Gini Index.</div>
+</div></div>
+
+<!-- Q32 -->
+<div class="q-card" id="q32">
+<div class="q-header"><span class="q-num">Q 32</span><span class="q-text">Enlist steps of ID3 decision tree algorithm. Explain it with suitable example and generate the tree.</span></div>
+<div class="q-body">
+<h3>ID3 Algorithm (Iterative Dichotomiser 3)</h3>
+<p>ID3, developed by Ross Quinlan (1986), builds a decision tree by recursively selecting the attribute with the <strong>highest Information Gain</strong> at each node.</p>
+<h3>Steps of ID3</h3>
+<ol class="step-list">
+<li>Calculate Entropy of the entire dataset S</li>
+<li>For each attribute A, calculate Information Gain: Gain(S, A) = Entropy(S) - Σ weighted entropy of subsets</li>
+<li>Select attribute with highest Information Gain as the root/current node</li>
+<li>Create branches for each value of the selected attribute</li>
+<li>Repeat steps 1–4 recursively for each branch using the subset of data for that branch</li>
+<li>Stop when: all instances in a branch have the same class (pure), no more attributes, or no instances remain</li>
+</ol>
+<h3>ID3 Formulas</h3>
+<div class="formula">Entropy(S) = -Σᵢ pᵢ × log₂(pᵢ)
+
+Information Gain:
+Gain(S, A) = Entropy(S) - Σ_{v∈Values(A)} [|Sᵥ|/|S|] × Entropy(Sᵥ)
+
+Gain Ratio (C4.5 improvement):
+GainRatio(S, A) = Gain(S, A) / SplitInfo(S, A)
+SplitInfo(S, A) = -Σ [|Sᵥ|/|S|] × log₂(|Sᵥ|/|S|)</div>
+<h3>ID3 Limitations</h3>
+<ul>
+<li>Biased toward attributes with many values (high Gain doesn't always mean better split)</li>
+<li>Cannot handle continuous attributes directly (needs discretization)</li>
+<li>Prone to overfitting (deep trees memorize training data)</li>
+<li>No tree pruning — C4.5 added pruning to fix this</li>
+</ul>
+<h3>Comparison: ID3 vs C4.5 vs CART</h3>
+<table>
+<tr><th>Feature</th><th>ID3</th><th>C4.5</th><th>CART</th></tr>
+<tr><td>Split criterion</td><td>Information Gain</td><td>Gain Ratio</td><td>Gini Index</td></tr>
+<tr><td>Multi-class</td><td>Yes</td><td>Yes</td><td>Binary splits only</td></tr>
+<tr><td>Continuous attr</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Pruning</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Missing values</td><td>No</td><td>Yes</td><td>Yes</td></tr>
+</table>
+<div class="note">📌 For the ID3 tree, refer to the Play Tennis decision tree in Q31. The same dataset and calculation applies to ID3.</div>
+</div></div>
+
+<!-- Q33 -->
+<div class="q-card" id="q33">
+<div class="q-header"><span class="q-num">Q 33</span><span class="q-text">Explain Tree Pruning techniques.</span></div>
+<div class="q-body">
+<h3>Tree Pruning</h3>
+<p><strong>Tree pruning</strong> is the process of removing branches from a decision tree that provide little predictive power, in order to reduce overfitting and improve generalization on unseen data.</p>
+<h3>Why Pruning is Needed</h3>
+<p>A fully grown decision tree tends to overfit the training data — it creates branches for even noisy training examples. Pruning removes these unnecessary branches to create a simpler, more generalizable tree.</p>
+<h3>Types of Pruning</h3>
+<h4>1. Pre-Pruning (Early Stopping)</h4>
+<p>Stop growing the tree early before it perfectly classifies the training set. Stop if:</p>
+<ul>
+<li>Number of instances at a node falls below a threshold</li>
+<li>Information gain at the node is below a threshold</li>
+<li>Statistical test shows no significant difference (chi-square test)</li>
+</ul>
+<div class="formula">Pre-Pruning: Stop splitting if Gain(S, A) < threshold
+Advantage: Fast, simple
+Disadvantage: May stop too early (horizon problem)</div>
+<h4>2. Post-Pruning (More Common)</h4>
+<p>Grow the full tree first, then remove or replace sub-trees from bottom up. More reliable than pre-pruning.</p>
+<div class="formula">Methods:
+1. Subtree Replacement Pruning:
+   Replace a subtree with a leaf if accuracy doesn't decrease on validation set
+   
+2. Subtree Raising:
+   Replace a subtree with its most used subtree
+   
+3. Cost-Complexity Pruning (CART):
+   Minimize: C_α(T) = Cost(T) + α × |T|
+   where |T| = number of leaf nodes, α = complexity parameter</div>
+<h4>3. Reduced Error Pruning</h4>
+<ol class="step-list">
+<li>Build full decision tree on training data</li>
+<li>Use a validation set separate from training and test sets</li>
+<li>For each internal node: replace the subtree with a leaf (majority class)</li>
+<li>If accuracy on validation set does NOT decrease → keep the pruned version</li>
+<li>Repeat until further pruning decreases accuracy</li>
+</ol>
+<div class="diagram">
+<div class="diagram-title">Before and After Pruning</div>
+<svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg" width="100%">
+<text x="130" y="15" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#d94f4f">Overfitted Tree (Before)</text>
+<rect x="90" y="20" width="80" height="28" rx="6" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="130" y="38" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#d94f4f">Outlook</text>
+<line x1="110" y1="48" x2="70" y2="75" stroke="#d94f4f" stroke-width="1"/><line x1="130" y1="48" x2="130" y2="75" stroke="#d94f4f" stroke-width="1"/><line x1="150" y1="48" x2="190" y2="75" stroke="#d94f4f" stroke-width="1"/>
+<rect x="40" y="76" width="60" height="24" rx="5" fill="rgba(217,79,79,0.08)" stroke="rgba(217,79,79,0.2)" stroke-width="1"/>
+<text x="70" y="92" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#d94f4f">Humidity</text>
+<rect x="108" y="76" width="44" height="24" rx="5" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="130" y="92" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#16a05e">YES</text>
+<rect x="162" y="76" width="60" height="24" rx="5" fill="rgba(217,79,79,0.08)" stroke="rgba(217,79,79,0.2)" stroke-width="1"/>
+<text x="192" y="92" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#d94f4f">Wind</text>
+<line x1="55" y1="100" x2="40" y2="130" stroke="#d94f4f" stroke-width="1"/><line x1="80" y1="100" x2="95" y2="130" stroke="#d94f4f" stroke-width="1"/>
+<rect x="15" y="130" width="44" height="22" rx="5" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.2)" stroke-width="1"/>
+<text x="37" y="145" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#d94f4f">NO</text>
+<rect x="70" y="130" width="44" height="22" rx="5" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="92" y="145" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#16a05e">YES</text>
+<text x="430" y="15" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#16a05e">Pruned Tree (After)</text>
+<rect x="390" y="20" width="80" height="28" rx="6" fill="rgba(29,111,164,0.1)" stroke="rgba(29,111,164,0.3)" stroke-width="1.5"/>
+<text x="430" y="38" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#1d6fa4">Outlook</text>
+<line x1="410" y1="48" x2="370" y2="90" stroke="#1d6fa4" stroke-width="1"/><line x1="430" y1="48" x2="430" y2="90" stroke="#1d6fa4" stroke-width="1"/><line x1="450" y1="48" x2="490" y2="90" stroke="#1d6fa4" stroke-width="1"/>
+<rect x="340" y="90" width="60" height="24" rx="5" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="370" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="600" fill="#d94f4f">NO</text>
+<rect x="408" y="90" width="44" height="24" rx="5" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="430" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#16a05e">YES</text>
+<rect x="462" y="90" width="60" height="24" rx="5" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.3)" stroke-width="1"/>
+<text x="492" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#16a05e">YES</text>
+</svg>
+</div>
+<div class="note">📌 Post-pruning (especially Reduced Error Pruning) is more reliable than pre-pruning. CART uses Minimum Description Length (MDL) principle for pruning.</div>
+</div></div>
+
+<!-- Q34 -->
+<div class="q-card" id="q34">
+<div class="q-header"><span class="q-num">Q 34</span><span class="q-text">Explain Bayesian learning and inference with suitable example. / Explain Bayes' Theorem and Naïve Bayesian Classification.</span></div>
+<div class="q-body">
+<h3>Bayes' Theorem</h3>
+<p>Bayes' theorem describes the probability of an event based on prior knowledge of conditions related to that event. It is the foundation of Bayesian classification.</p>
+<div class="formula">P(H|X) = P(X|H) × P(H) / P(X)
+
+Where:
+  P(H|X) = Posterior probability of hypothesis H given evidence X
+  P(X|H) = Likelihood: probability of observing X given H is true
+  P(H)   = Prior probability of H (before seeing X)
+  P(X)   = Evidence: probability of X (normalizing constant)
+
+For classification: H = class label, X = attribute values
+P(Cᵢ|X) = P(X|Cᵢ) × P(Cᵢ) / P(X)
+Classify X to class Cᵢ that maximizes P(Cᵢ|X)</div>
+<h3>Naïve Bayesian Classifier</h3>
+<p>The <strong>Naïve</strong> assumption: all attributes are <strong>conditionally independent</strong> given the class. This simplifies calculation dramatically.</p>
+<div class="formula">P(X|Cᵢ) = P(x₁|Cᵢ) × P(x₂|Cᵢ) × ... × P(xₙ|Cᵢ) = Πₖ P(xₖ|Cᵢ)
+
+Classification rule:
+  Classify X to Cᵢ if P(Cᵢ|X) > P(Cⱼ|X) for all j ≠ i
+  Equivalently: maximize P(X|Cᵢ) × P(Cᵢ)</div>
+<h3>Why "Naïve"?</h3>
+<p>It is "naïve" because in reality, attributes are rarely fully independent. E.g., "sunny" and "hot" are correlated. But despite this oversimplification, Naïve Bayes works surprisingly well in practice (especially for text classification).</p>
+<h3>Example — Play Tennis Classification</h3>
+<div class="calc-box">New instance X = (Outlook=Sunny, Temp=Cool, Humidity=High, Wind=Strong)
+Predict: Play Tennis? (Yes or No)
+
+Training data: 9 Yes, 5 No (from Q31 dataset)
+
+P(Yes) = 9/14 = 0.643
+P(No)  = 5/14 = 0.357
+
+Calculate P(X|Yes):
+  P(Sunny|Yes)  = 2/9 = 0.222
+  P(Cool|Yes)   = 3/9 = 0.333
+  P(High|Yes)   = 3/9 = 0.333
+  P(Strong|Yes) = 3/9 = 0.333
+
+P(X|Yes) = 0.222 × 0.333 × 0.333 × 0.333 = 0.00823
+
+Calculate P(X|No):
+  P(Sunny|No)  = 3/5 = 0.600
+  P(Cool|No)   = 1/5 = 0.200
+  P(High|No)   = 4/5 = 0.800
+  P(Strong|No) = 3/5 = 0.600
+
+P(X|No) = 0.600 × 0.200 × 0.800 × 0.600 = 0.0576
+
+Compare:
+  P(Yes) × P(X|Yes) = 0.643 × 0.00823 = 0.00529
+  P(No)  × P(X|No)  = 0.357 × 0.0576  = 0.02056
+
+0.02056 > 0.00529 → PREDICT: NO (Don't Play Tennis)</div>
+<h3>Advantages of Naïve Bayes</h3>
+<ul>
+<li>Fast, simple, and easy to implement</li>
+<li>Works well with small training data</li>
+<li>Handles multi-class problems naturally</li>
+<li>Excellent for text classification (spam filtering, sentiment analysis)</li>
+</ul>
+</div></div>
+
+<!-- Q35 -->
+<div class="q-card" id="q35">
+<div class="q-header"><span class="q-num">Q 35</span><span class="q-text">Explain logistic regression with appropriate example.</span></div>
+<div class="q-body">
+<h3>Logistic Regression</h3>
+<p><strong>Logistic regression</strong> is a classification algorithm used when the dependent variable (output) is binary/categorical. Unlike linear regression, it models the probability of class membership using the logistic (sigmoid) function.</p>
+<h3>Sigmoid Function</h3>
+<div class="formula">σ(z) = 1 / (1 + e⁻ᶻ)   → outputs between 0 and 1
+
+where z = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ  (linear combination)
+
+P(Y=1|X) = σ(z) = 1 / (1 + e⁻⁽β₀ + β₁x₁ + ... + βₙxₙ⁾)
+
+Decision Rule:
+  If P(Y=1|X) ≥ 0.5 → Classify as Class 1 (Positive)
+  If P(Y=1|X) < 0.5 → Classify as Class 0 (Negative)</div>
+<div class="diagram">
+<div class="diagram-title">Sigmoid Function — S-shaped curve</div>
+<svg viewBox="0 0 500 140" xmlns="http://www.w3.org/2000/svg" width="100%">
+<line x1="50" y1="120" x2="450" y2="120" stroke="#e2e5ef" stroke-width="1.5"/>
+<line x1="250" y1="10" x2="250" y2="130" stroke="#e2e5ef" stroke-width="1.5"/>
+<path d="M60,118 C80,117 100,115 120,110 C140,104 160,92 180,77 C200,62 220,42 250,35 C280,28 300,32 320,42 C340,52 360,68 380,80 C400,92 420,108 440,115" fill="none" stroke="#1d6fa4" stroke-width="2.5"/>
+<line x1="50" y1="75" x2="450" y2="75" stroke="rgba(217,79,79,0.5)" stroke-width="1" stroke-dasharray="5 3"/>
+<text x="455" y="78" font-family="Outfit,sans-serif" font-size="10" fill="#d94f4f">0.5</text>
+<text x="255" y="20" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">z=0</text>
+<text x="30" y="123" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">z →</text>
+<text x="30" y="25" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">P=1</text>
+<text x="30" y="120" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">P=0</text>
+<text x="250" y="140" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" fill="#1d6fa4">σ(z) = 1/(1+e⁻ᶻ)</text>
+</svg>
+</div>
+<h3>Example — Email Spam Detection</h3>
+<div class="calc-box">Features: x₁ = number of suspicious words, x₂ = has external links (0/1)
+Output: Y = 1 (Spam) or Y = 0 (Not Spam)
+
+Trained model: β₀=-3, β₁=0.8, β₂=1.5
+
+For new email: x₁=5 suspicious words, x₂=1 (has links)
+z = -3 + 0.8×5 + 1.5×1 = -3 + 4 + 1.5 = 2.5
+P(Spam) = 1/(1 + e⁻²·⁵) = 1/(1 + 0.082) = 0.924
+
+Since 0.924 > 0.5 → Classify as SPAM</div>
+<h3>Logistic vs Linear Regression</h3>
+<table>
+<tr><th>Aspect</th><th>Linear Regression</th><th>Logistic Regression</th></tr>
+<tr><td>Output</td><td>Continuous value</td><td>Probability (0 to 1)</td></tr>
+<tr><td>Task</td><td>Regression</td><td>Classification</td></tr>
+<tr><td>Function</td><td>Linear line</td><td>Sigmoid curve</td></tr>
+<tr><td>Loss</td><td>MSE (Mean Squared Error)</td><td>Log Loss (Cross Entropy)</td></tr>
+</table>
+</div></div>
+
+<!-- Q36 -->
+<div class="q-card" id="q36">
+<div class="q-header"><span class="q-num">Q 36</span><span class="q-text">Explain Naïve Bayesian classifier with example. Why is it called Naïve?</span></div>
+<div class="q-body">
+<h3>Why "Naïve"?</h3>
+<p>The classifier is called "naïve" because it makes the <strong>naïve assumption of class conditional independence</strong> — it assumes that each attribute contributes independently to the probability of the class, with no dependencies between attributes. In real data, attributes are rarely truly independent (e.g., height and weight are correlated), but this simplification makes computation tractable and surprisingly effective.</p>
+<div class="formula">Naïve Independence Assumption:
+P(X|Cᵢ) = P(x₁,x₂,...,xₙ|Cᵢ) = Πₖ P(xₖ|Cᵢ)
+
+Without this assumption, we would need P(x₁,x₂,...,xₙ|Cᵢ)
+which requires exponentially many parameters to estimate.
+With independence: only n × |C| parameters needed.</div>
+<h3>Naïve Bayes for Categorical Attributes</h3>
+<div class="formula">For each class Cᵢ:
+  Compute: P(Cᵢ|X) ∝ P(Cᵢ) × Πₖ P(xₖ|Cᵢ)
+  
+  P(xₖ = v | Cᵢ) = (count of records with xₖ=v in class Cᵢ) / (count of records in class Cᵢ)
+  
+  Laplace Smoothing (to avoid zero probability):
+  P(xₖ = v | Cᵢ) = (count + 1) / (total_in_class + |domain of xₖ|)</div>
+<h3>Naïve Bayes for Continuous Attributes (Gaussian)</h3>
+<div class="formula">P(xₖ = v | Cᵢ) = (1 / √(2π)σᵢₖ) × exp[-(v - μᵢₖ)² / (2σᵢₖ²)]
+
+where μᵢₖ = mean of attribute xₖ for class Cᵢ
+      σᵢₖ = std dev of attribute xₖ for class Cᵢ</div>
+<h3>Complete Example — Loan Approval</h3>
+<div class="calc-box">Training Data:
+Credit  Income   Loan_Approved
+Good    High     Yes
+Bad     Low      No
+Good    Low      Yes
+Bad     High     No
+Good    High     Yes
+
+P(Yes) = 3/5 = 0.6, P(No) = 2/5 = 0.4
+
+New case: Credit=Good, Income=Low → Approve?
+
+P(Credit=Good|Yes) = 2/3, P(Credit=Good|No) = 0/2 = 0 → use Laplace: 1/4
+P(Income=Low|Yes) = 1/3, P(Income=Low|No) = 1/2
+
+P(Yes|X) ∝ 0.6 × 2/3 × 1/3 = 0.133
+P(No|X)  ∝ 0.4 × 1/4 × 1/2 = 0.050
+
+0.133 > 0.050 → APPROVE LOAN</div>
+<div class="note">📌 Naïve Bayes is very popular for email spam filtering (Spam Assassin), text classification, and sentiment analysis despite its naïve assumption.</div>
+</div></div>
+
+<!-- Q37 -->
+<div class="q-card" id="q37">
+<div class="q-header"><span class="q-num">Q 37</span><span class="q-text">Differentiate classification and prediction.</span></div>
+<div class="q-body">
+<table>
+<tr><th>Parameter</th><th>Classification</th><th>Prediction</th></tr>
+<tr><td>Output</td><td>Discrete class label (category)</td><td>Continuous numerical value</td></tr>
+<tr><td>Task type</td><td>Predicts which category a sample belongs to</td><td>Predicts a missing or future value</td></tr>
+<tr><td>Method</td><td>Decision Tree, KNN, SVM, Naive Bayes</td><td>Linear Regression, Neural Networks</td></tr>
+<tr><td>Evaluation</td><td>Accuracy, Precision, Recall, F1-Score</td><td>MAE, MSE, RMSE, R²</td></tr>
+<tr><td>Example</td><td>"Is this customer going to churn?" → Yes/No</td><td>"What will this customer's lifetime value be?" → ₹45,000</td></tr>
+<tr><td>Loss function</td><td>Cross-entropy, Hinge loss</td><td>Mean Squared Error</td></tr>
+<tr><td>Output range</td><td>Finite set of classes</td><td>Any real number</td></tr>
+</table>
+<div class="two-col">
+<div class="col-box"><strong>Classification Examples</strong><ul><li>Email → Spam / Ham</li><li>Tumor → Malignant / Benign</li><li>Digit recognition → 0-9</li><li>Sentiment → Positive / Negative / Neutral</li></ul></div>
+<div class="col-box"><strong>Prediction (Regression) Examples</strong><ul><li>House price (₹ amount)</li><li>Tomorrow's temperature (°C)</li><li>Stock closing price</li><li>Customer lifetime value</li></ul></div>
+</div>
+</div></div>
+
+
+<!-- ==================== SECTION 5: CLUSTERING ==================== -->
+<div class="section-title" id="s5">Section 5 — Clustering <span>Q38–Q50</span></div>
+
+<!-- Q38 -->
+<div class="q-card" id="q38">
+<div class="q-header"><span class="q-num">Q 38</span><span class="q-text">Differentiate clustering and classification.</span></div>
+<div class="q-body">
+<table>
+<tr><th>Parameter</th><th>Classification</th><th>Clustering</th></tr>
+<tr><td>Learning type</td><td>Supervised</td><td>Unsupervised</td></tr>
+<tr><td>Labels</td><td>Predefined class labels required</td><td>No labels — discovers groups naturally</td></tr>
+<tr><td>Goal</td><td>Assign new data to known classes</td><td>Find natural groupings in data</td></tr>
+<tr><td>Output</td><td>Discrete class label</td><td>Clusters / groups</td></tr>
+<tr><td>Prior knowledge</td><td>Knows number and names of classes</td><td>Number of clusters may be unknown</td></tr>
+<tr><td>Evaluation</td><td>Accuracy, F1, Precision, Recall</td><td>Silhouette coefficient, Inertia, DB Index</td></tr>
+<tr><td>Algorithms</td><td>Decision Tree, KNN, SVM, NB</td><td>K-Means, DBSCAN, Hierarchical</td></tr>
+<tr><td>Example</td><td>Email spam detection (spam/ham)</td><td>Customer segmentation</td></tr>
+</table>
+<div class="two-col">
+<div class="col-box"><strong>Classification Analogy</strong><p>Like a student who already knows animal names — sees an image and says "that's a cat" based on learned labels.</p></div>
+<div class="col-box"><strong>Clustering Analogy</strong><p>Like a child who has never been taught animal names — groups similar-looking animals together by instinct.</p></div>
+</div>
+</div></div>
+
+<!-- Q39 -->
+<div class="q-card" id="q39">
+<div class="q-header"><span class="q-num">Q 39</span><span class="q-text">Write about different clustering approaches with their strength and weakness.</span></div>
+<div class="q-body">
+<h3>Major Clustering Approaches</h3>
+<h4>1. Partitioning Methods</h4>
+<p>Divide dataset into k non-overlapping clusters. Each cluster has exactly one centroid. Examples: K-Means, K-Medoids (PAM).</p>
+<div class="two-col">
+<div class="col-box"><strong>✅ Strengths</strong><ul><li>Simple, scalable, efficient O(nkt) time</li><li>Works well on globular/spherical clusters</li><li>Easy to implement</li></ul></div>
+<div class="col-box"><strong>❌ Weaknesses</strong><ul><li>Must specify k in advance</li><li>Sensitive to outliers (K-Means)</li><li>Cannot find non-convex clusters</li><li>Not suitable for categorical data</li></ul></div>
+</div>
+<h4>2. Hierarchical Methods</h4>
+<p>Build a tree of clusters (dendrogram). Two approaches: Agglomerative (bottom-up) and Divisive (top-down).</p>
+<div class="two-col">
+<div class="col-box"><strong>✅ Strengths</strong><ul><li>No need to specify k in advance</li><li>Produces a full cluster hierarchy</li><li>Can find clusters of any shape</li><li>Deterministic (no random initialization)</li></ul></div>
+<div class="col-box"><strong>❌ Weaknesses</strong><ul><li>O(n²) time — not scalable to large data</li><li>Cannot undo a bad merge/split decision</li><li>Sensitive to noise and outliers</li></ul></div>
+</div>
+<h4>3. Density-Based Methods</h4>
+<p>Clusters are dense regions of data separated by low-density regions. Example: DBSCAN.</p>
+<div class="two-col">
+<div class="col-box"><strong>✅ Strengths</strong><ul><li>Can find arbitrarily shaped clusters</li><li>Automatically identifies outliers/noise</li><li>No need to specify k</li><li>Robust to outliers</li></ul></div>
+<div class="col-box"><strong>❌ Weaknesses</strong><ul><li>Struggles with varying density clusters</li><li>Sensitive to ε and MinPts parameters</li><li>Poor performance in high dimensions</li></ul></div>
+</div>
+<h4>4. Grid-Based Methods</h4>
+<p>Quantize space into finite number of cells forming a grid. Examples: STING, CLIQUE.</p>
+<div class="two-col">
+<div class="col-box"><strong>✅ Strengths</strong><ul><li>Very fast — O(n) processing time</li><li>Good for large spatial datasets</li></ul></div>
+<div class="col-box"><strong>❌ Weaknesses</strong><ul><li>Cluster quality depends on grid granularity</li><li>Not accurate for non-uniform data</li></ul></div>
+</div>
+<h4>5. Model-Based Methods</h4>
+<p>Assume data is generated from a mixture of probability distributions. Example: Gaussian Mixture Models (GMM), EM algorithm.</p>
+<div class="two-col">
+<div class="col-box"><strong>✅ Strengths</strong><ul><li>Soft cluster assignments (probabilistic)</li><li>Handles overlapping clusters</li><li>Statistically principled</li></ul></div>
+<div class="col-box"><strong>❌ Weaknesses</strong><ul><li>Assumes data fits a specific distribution</li><li>Computationally expensive</li><li>May converge to local optima</li></ul></div>
+</div>
+<div class="note">📌 Exam tip: Know at least 2 strengths and 2 weaknesses for each approach.</div>
+</div></div>
+
+<!-- Q40 -->
+<div class="q-card" id="q40">
+<div class="q-header"><span class="q-num">Q 40</span><span class="q-text">Explain K-means clustering algorithm and prove that outliers adversely affect its performance.</span></div>
+<div class="q-body">
+<h3>K-Means Clustering Algorithm</h3>
+<p>K-Means partitions n data points into k clusters, where each point belongs to the cluster with the nearest centroid (mean).</p>
+<h3>Algorithm Steps</h3>
+<ol class="step-list">
+<li>Choose k (number of clusters) and randomly initialize k centroids</li>
+<li>Assign each data point to the nearest centroid using Euclidean distance</li>
+<li>Recalculate centroid of each cluster as the mean of all points assigned to it</li>
+<li>Repeat steps 2–3 until centroids no longer move (convergence) or max iterations reached</li>
+</ol>
+<div class="formula">Distance: d(x, cᵢ) = √[Σⱼ(xⱼ - cᵢⱼ)²]
+
+Centroid Update: cᵢ = (1/|Cᵢ|) × Σ_{x∈Cᵢ} x
+
+Objective Function (Minimize):
+  J = Σᵢ Σ_{x∈Cᵢ} ||x - cᵢ||²  (Sum of Squared Errors)</div>
+<h3>Worked Example (k=2)</h3>
+<div class="calc-box">Data points: A(1,1), B(2,1), C(4,3), D(5,4), E(6,5)
+k=2, Initial centroids: C1=(1,1), C2=(6,5)
+
+Iteration 1 — Assign:
+  A(1,1): d(C1)=0, d(C2)=√50=7.07 → Cluster 1
+  B(2,1): d(C1)=1, d(C2)=√41=6.40 → Cluster 1
+  C(4,3): d(C1)=√13=3.6, d(C2)=√8=2.83 → Cluster 2
+  D(5,4): d(C1)=√25=5, d(C2)=√2=1.41 → Cluster 2
+  E(6,5): d(C1)=√41=6.4, d(C2)=0 → Cluster 2
+
+Update centroids:
+  C1 = mean(A,B) = ((1+2)/2, (1+1)/2) = (1.5, 1)
+  C2 = mean(C,D,E) = ((4+5+6)/3, (3+4+5)/3) = (5, 4)
+
+Iteration 2 — Assign with new centroids:
+  A(1,1) → C1(1.5,1): d=0.5 vs C2(5,4): d=5 → Cluster 1
+  B(2,1) → C1: d=0.5 vs C2: d=4.24 → Cluster 1
+  C(4,3) → C1: d=3.2 vs C2: d=1.41 → Cluster 2
+  D(5,4) → Cluster 2, E(6,5) → Cluster 2
+
+No change → CONVERGED
+Final: Cluster1={A,B}, Cluster2={C,D,E}</div>
+<h3>Effect of Outliers on K-Means</h3>
+<div class="calc-box">Original data: A(1,1), B(2,1), C(4,3), D(5,4), E(6,5)
+Outlier added: O(50,50)
+
+WITHOUT outlier: C1=(1.5,1), C2=(5,4) ← correct clusters
+
+WITH outlier O(50,50) in Cluster 2:
+  C2 = mean(C,D,E,O) = ((4+5+6+50)/4, (3+4+5+50)/4) = (16.25, 15.5)
+
+Now C2 centroid is pulled far away!
+→ Points C,D,E may be reassigned to C1
+→ Clusters become meaningless
+→ Outlier O dominates centroid position</div>
+<div class="warn">⚠️ K-Means uses mean → highly sensitive to outliers. K-Medoids (PAM) uses actual data points as centers → much more robust to outliers.</div>
+<div class="diagram">
+<div class="diagram-title">K-Means: Without vs With Outlier</div>
+<svg viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" width="100%">
+<text x="130" y="14" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">Without Outlier</text>
+<rect x="10" y="18" width="240" height="110" rx="6" fill="rgba(29,111,164,0.03)" stroke="rgba(29,111,164,0.15)" stroke-width="1"/>
+<circle cx="40" cy="115" r="7" fill="#1d6fa4" opacity="0.8"/><circle cx="60" cy="115" r="7" fill="#1d6fa4" opacity="0.8"/>
+<circle cx="120" cy="75" r="7" fill="#16a05e" opacity="0.8"/><circle cx="150" cy="60" r="7" fill="#16a05e" opacity="0.8"/><circle cx="180" cy="45" r="7" fill="#16a05e" opacity="0.8"/>
+<circle cx="50" cy="115" r="5" fill="none" stroke="#1d6fa4" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="50" cy="115" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#1d6fa4">C1</text>
+<circle cx="150" cy="60" r="5" fill="none" stroke="#16a05e" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="150" cy="60" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#16a05e">C2</text>
+<text x="130" y="135" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#16a05e">Correct clusters ✓</text>
+<text x="430" y="14" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#d94f4f">With Outlier</text>
+<rect x="310" y="18" width="280" height="110" rx="6" fill="rgba(217,79,79,0.03)" stroke="rgba(217,79,79,0.15)" stroke-width="1"/>
+<circle cx="340" cy="115" r="7" fill="#1d6fa4" opacity="0.8"/><circle cx="360" cy="115" r="7" fill="#1d6fa4" opacity="0.8"/>
+<circle cx="420" cy="75" r="7" fill="#16a05e" opacity="0.8"/><circle cx="450" cy="60" r="7" fill="#16a05e" opacity="0.8"/><circle cx="480" cy="45" r="7" fill="#16a05e" opacity="0.8"/>
+<circle cx="570" cy="28" r="9" fill="#d94f4f" opacity="0.9"/>
+<text x="570" y="23" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="700" fill="#d94f4f">O</text>
+<circle cx="530" cy="48" r="5" fill="none" stroke="#d94f4f" stroke-width="2" stroke-dasharray="3 2"/>
+<text x="530" y="43" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#d94f4f">C2 shifted!</text>
+<line x1="480" y1="45" x2="530" y2="48" stroke="#d94f4f" stroke-width="1.5" stroke-dasharray="4 2"/>
+<line x1="570" y1="28" x2="530" y2="48" stroke="#d94f4f" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="430" y="135" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#d94f4f">Centroid pulled toward outlier ✗</text>
+</svg>
+</div>
+</div></div>
+
+<!-- Q41 -->
+<div class="q-card" id="q41">
+<div class="q-header"><span class="q-num">Q 41</span><span class="q-text">Give strength and weakness of K-Means in comparison of K-Medoids algorithm.</span></div>
+<div class="q-body">
+<h3>K-Medoids (PAM — Partitioning Around Medoids)</h3>
+<p>K-Medoids uses actual data points as cluster centers (medoids) instead of computed means. The medoid is the most centrally located object in a cluster.</p>
+<table>
+<tr><th>Feature</th><th>K-Means</th><th>K-Medoids (PAM)</th></tr>
+<tr><td>Cluster center</td><td>Mean (not necessarily a data point)</td><td>Actual data point (medoid)</td></tr>
+<tr><td>Outlier sensitivity</td><td>HIGH — mean pulled by outliers</td><td>LOW — medoid is robust</td></tr>
+<tr><td>Data type</td><td>Numeric only</td><td>Works with any distance measure</td></tr>
+<tr><td>Time complexity</td><td>O(nkt) — very fast</td><td>O(k(n-k)²) — slower</td></tr>
+<tr><td>Scalability</td><td>Highly scalable to large datasets</td><td>Limited to smaller datasets</td></tr>
+<tr><td>Noise handling</td><td>Poor — affected by noise</td><td>Good — robust to noise</td></tr>
+<tr><td>Convergence</td><td>Guaranteed to converge</td><td>Guaranteed to converge</td></tr>
+<tr><td>Optimal solution</td><td>May get stuck in local optima</td><td>Also local optima issue</td></tr>
+</table>
+<div class="two-col">
+<div class="col-box"><strong>K-Means Strengths</strong><ul><li>Simple and easy to implement</li><li>Very fast for large datasets</li><li>Scales well with O(nkt) complexity</li><li>Works well when clusters are globular</li></ul></div>
+<div class="col-box"><strong>K-Means Weaknesses</strong><ul><li>Sensitive to outliers and noise</li><li>Must specify k in advance</li><li>Only works with numerical data</li><li>Cannot find non-convex clusters</li><li>Centroid may not be an actual data point</li></ul></div>
+</div>
+<div class="formula">K-Medoids Cost Function:
+  Minimize: Σᵢ Σ_{x∈Cᵢ} dist(x, mᵢ)
+  where mᵢ = medoid (actual data point) in cluster i
+
+For each non-medoid point p, try swapping it with medoid mᵢ:
+  Cost change = Σ d(point, new_medoid) - Σ d(point, old_medoid)
+  If cost decreases → accept swap</div>
+</div></div>
+
+<!-- Q42 -->
+<div class="q-card" id="q42">
+<div class="q-header"><span class="q-num">Q 42</span><span class="q-text">Differentiate agglomerative and divisive methods of clustering.</span></div>
+<div class="q-body">
+<h3>Hierarchical Clustering</h3>
+<p>Hierarchical clustering builds a dendrogram (tree structure) showing how clusters are merged or split at different levels of similarity.</p>
+<h3>Agglomerative (Bottom-Up)</h3>
+<p>Starts with each point as its own cluster. Iteratively merges the two closest clusters until all points form one cluster.</p>
+<ol class="step-list">
+<li>Treat each data point as a single cluster (n clusters initially)</li>
+<li>Find the two closest clusters based on linkage criteria</li>
+<li>Merge them into a single cluster</li>
+<li>Update distance matrix</li>
+<li>Repeat until only one cluster remains or k clusters achieved</li>
+</ol>
+<h3>Divisive (Top-Down)</h3>
+<p>Starts with all points in one cluster. Iteratively splits the largest/most heterogeneous cluster until each point is its own cluster.</p>
+<table>
+<tr><th>Feature</th><th>Agglomerative</th><th>Divisive</th></tr>
+<tr><td>Direction</td><td>Bottom-Up (merge)</td><td>Top-Down (split)</td></tr>
+<tr><td>Start</td><td>n individual clusters</td><td>1 cluster with all points</td></tr>
+<tr><td>End</td><td>1 cluster (or stop at k)</td><td>n singleton clusters (or stop at k)</td></tr>
+<tr><td>Complexity</td><td>O(n²) to O(n³)</td><td>O(2ⁿ) — exponential</td></tr>
+<tr><td>Popularity</td><td>More common in practice</td><td>Less common</td></tr>
+<tr><td>Algorithms</td><td>AGNES, Single/Complete/Average linkage</td><td>DIANA</td></tr>
+</table>
+<h3>Linkage Criteria (Agglomerative)</h3>
+<div class="formula">Single Linkage (MIN): dist(Ci, Cj) = min d(x,y) for x∈Ci, y∈Cj
+  → Creates long, chained clusters ("chain effect")
+
+Complete Linkage (MAX): dist(Ci, Cj) = max d(x,y)
+  → Creates compact, roughly equal-sized clusters
+
+Average Linkage: dist(Ci, Cj) = avg d(x,y)
+  → Compromise between single and complete
+
+Ward's Method: Minimize increase in total within-cluster variance
+  → Tends to create equal-sized, compact clusters</div>
+<div class="diagram">
+<div class="diagram-title">Dendrogram — Agglomerative Clustering</div>
+<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" width="100%">
+<text x="60" y="150" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">A</text>
+<text x="120" y="150" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">B</text>
+<text x="200" y="150" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">C</text>
+<text x="280" y="150" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">D</text>
+<text x="380" y="150" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#6b7280">E</text>
+<line x1="60" y1="140" x2="60" y2="110" stroke="#1d6fa4" stroke-width="1.5"/>
+<line x1="120" y1="140" x2="120" y2="110" stroke="#1d6fa4" stroke-width="1.5"/>
+<line x1="60" y1="110" x2="120" y2="110" stroke="#1d6fa4" stroke-width="1.5"/>
+<text x="90" y="105" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#1d6fa4">{A,B}</text>
+<line x1="90" y1="110" x2="90" y2="80" stroke="#1d6fa4" stroke-width="1.5"/>
+<line x1="200" y1="140" x2="200" y2="120" stroke="#16a05e" stroke-width="1.5"/>
+<line x1="280" y1="140" x2="280" y2="120" stroke="#16a05e" stroke-width="1.5"/>
+<line x1="200" y1="120" x2="280" y2="120" stroke="#16a05e" stroke-width="1.5"/>
+<text x="240" y="115" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#16a05e">{C,D}</text>
+<line x1="240" y1="120" x2="240" y2="80" stroke="#16a05e" stroke-width="1.5"/>
+<line x1="90" y1="80" x2="240" y2="80" stroke="#c2610f" stroke-width="1.5"/>
+<text x="165" y="75" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#c2610f">{A,B,C,D}</text>
+<line x1="165" y1="80" x2="165" y2="50" stroke="#c2610f" stroke-width="1.5"/>
+<line x1="380" y1="140" x2="380" y2="50" stroke="#d94f4f" stroke-width="1.5"/>
+<line x1="165" y1="50" x2="380" y2="50" stroke="#d94f4f" stroke-width="1.5"/>
+<text x="272" y="45" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#d94f4f">{A,B,C,D,E}</text>
+<line x1="272" y1="50" x2="272" y2="25" stroke="#d94f4f" stroke-width="1.5"/>
+<text x="30" y="110" text-anchor="start" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">↑ distance</text>
+</svg>
+</div>
+</div></div>
+
+<!-- Q43 -->
+<div class="q-card" id="q43">
+<div class="q-header"><span class="q-num">Q 43</span><span class="q-text">Explain partitioning and hierarchical methods of clustering.</span></div>
+<div class="q-body">
+<h3>Partitioning Methods</h3>
+<p>Partitioning methods divide the database of n objects into k groups (partitions). Each partition represents a cluster. The algorithm iteratively improves the partitioning to maximize cluster quality.</p>
+<h4>Key Characteristics</h4>
+<ul>
+<li>Number of clusters k must be specified upfront</li>
+<li>Each point belongs to exactly one cluster (hard assignment)</li>
+<li>Goal: minimize within-cluster variance, maximize between-cluster separation</li>
+</ul>
+<h4>K-Means (Best Partitioning Algorithm)</h4>
+<div class="formula">1. Initialize k centroids randomly
+2. Assign each point to nearest centroid
+3. Update centroids = mean of assigned points
+4. Repeat 2-3 until convergence</div>
+<h4>K-Medoids (PAM)</h4>
+<div class="formula">Same as K-Means but uses actual data points as centers
+More robust to outliers, works with any distance metric</div>
+<h3>Hierarchical Methods</h3>
+<p>Hierarchical methods create a nested sequence of clusters, represented as a dendrogram tree. No need to specify k in advance — cut the dendrogram at any level to get desired number of clusters.</p>
+<h4>Agglomerative (AGNES)</h4>
+<p>Bottom-up approach. Each object starts as its own cluster. Closest clusters are merged progressively.</p>
+<h4>Divisive (DIANA)</h4>
+<p>Top-down approach. All objects start in one cluster. Clusters are split recursively.</p>
+<table>
+<tr><th>Criterion</th><th>Partitioning</th><th>Hierarchical</th></tr>
+<tr><td>k specification</td><td>Required upfront</td><td>Not required (cut dendrogram)</td></tr>
+<tr><td>Scalability</td><td>O(nkt) — scalable</td><td>O(n²logn) — limited</td></tr>
+<tr><td>Cluster shape</td><td>Spherical/globular only</td><td>Any shape (with appropriate linkage)</td></tr>
+<tr><td>Undo operations</td><td>Can reassign points</td><td>Merge/split cannot be undone</td></tr>
+<tr><td>Best for</td><td>Large, round clusters</td><td>Exploratory analysis, any size</td></tr>
+</table>
+</div></div>
+
+<!-- Q44 -->
+<div class="q-card" id="q44">
+<div class="q-header"><span class="q-num">Q 44</span><span class="q-text">Enlist steps of K-Means clustering algorithm. Explain it with suitable example.</span></div>
+<div class="q-body">
+<h3>K-Means Algorithm Steps</h3>
+<ol class="step-list">
+<li>Select k (number of clusters) — usually done using Elbow Method</li>
+<li>Randomly initialize k cluster centroids from the dataset</li>
+<li>Calculate Euclidean distance from each point to all k centroids</li>
+<li>Assign each point to the cluster with the nearest centroid</li>
+<li>Recalculate centroid of each cluster = mean of all assigned points</li>
+<li>If centroids changed, go to step 3. If not changed → convergence → STOP</li>
+</ol>
+<h3>Detailed Example (k=2)</h3>
+<p>Dataset: P1(2,4), P2(0,4), P3(4,2), P4(5,7), P5(7,6), P6(9,4)</p>
+<div class="calc-box">Initial Centroids: C1=(2,4), C2=(5,7)
+
+=== ITERATION 1 ===
+Distances from C1(2,4) and C2(5,7):
+P1(2,4): d(C1)=0,    d(C2)=√(9+9)=√18=4.24 → C1
+P2(0,4): d(C1)=2,    d(C2)=√(25+9)=5.83 → C1
+P3(4,2): d(C1)=√8=2.83, d(C2)=√(1+25)=5.09 → C1
+P4(5,7): d(C1)=√(9+9)=4.24, d(C2)=0 → C2
+P5(7,6): d(C1)=√(25+4)=5.39, d(C2)=√(4+1)=2.24 → C2
+P6(9,4): d(C1)=√(49+0)=7, d(C2)=√(16+9)=5 → C2
+
+Cluster 1: {P1,P2,P3}  Cluster 2: {P4,P5,P6}
+
+=== UPDATE CENTROIDS ===
+New C1 = ((2+0+4)/3, (4+4+2)/3) = (2, 3.33)
+New C2 = ((5+7+9)/3, (7+6+4)/3) = (7, 5.67)
+
+=== ITERATION 2 ===
+Distances from C1(2,3.33) and C2(7,5.67):
+P1(2,4): d(C1)=0.67, d(C2)=5.27 → C1
+P2(0,4): d(C1)=2.07, d(C2)=7.09 → C1
+P3(4,2): d(C1)=2.47, d(C2)=4.37 → C1
+P4(5,7): d(C1)=4.33, d(C2)=2.78 → C2
+P5(7,6): d(C1)=5.65, d(C2)=0.47 → C2
+P6(9,4): d(C1)=7.01, d(C2)=2.09 → C2
+
+No change in assignments → CONVERGED!
+
+Final Clusters:
+Cluster 1: {P1(2,4), P2(0,4), P3(4,2)} → Centroid=(2, 3.33)
+Cluster 2: {P4(5,7), P5(7,6), P6(9,4)} → Centroid=(7, 5.67)</div>
+<div class="note">📌 K-Means is sensitive to initial centroid placement. Run multiple times with different initializations (K-Means++) to avoid local optima.</div>
+</div></div>
+
+<!-- Q45 -->
+<div class="q-card" id="q45">
+<div class="q-header"><span class="q-num">Q 45</span><span class="q-text">Explain Web Structure and Web Usage Mining.</span></div>
+<div class="q-body">
+<h3>Web Mining Overview</h3>
+<p><strong>Web mining</strong> is the application of data mining techniques to discover patterns from World Wide Web data. It has three categories: Web Content Mining, Web Structure Mining, and Web Usage Mining.</p>
+<h3>Web Structure Mining</h3>
+<p>Web structure mining analyzes the <strong>hyperlink structure</strong> of the web (graph of nodes=pages, edges=links) to discover useful information about the relationships between web pages.</p>
+<h4>Key Applications</h4>
+<ul>
+<li><strong>PageRank (Google):</strong> Ranks pages by how many high-quality pages link to them. A page is important if important pages point to it.</li>
+<li><strong>HITS Algorithm:</strong> Identifies "hubs" (pages with many outgoing quality links) and "authorities" (pages with many incoming quality links)</li>
+<li><strong>Community Detection:</strong> Find groups of related web pages (e.g., all pages about "machine learning")</li>
+<li><strong>Link Prediction:</strong> Predict which pages are likely to link to each other in future</li>
+</ul>
+<div class="formula">PageRank(P) = (1-d) + d × Σ [PageRank(Tᵢ) / C(Tᵢ)]
+
+where d = damping factor (0.85), Tᵢ = pages linking to P,
+      C(Tᵢ) = number of outgoing links from page Tᵢ</div>
+<h3>Web Usage Mining</h3>
+<p>Web usage mining analyzes <strong>web server logs</strong> and user behavior data to understand how users navigate and interact with websites.</p>
+<h4>Data Sources</h4>
+<ul>
+<li>Server-side logs (IP address, timestamp, URL, bytes transferred)</li>
+<li>Client-side cookies and browser history</li>
+<li>Registration data</li>
+<li>User session data</li>
+</ul>
+<h4>Process Steps</h4>
+<ol class="step-list">
+<li><strong>Data Collection:</strong> Gather web server access logs</li>
+<li><strong>Data Preprocessing:</strong> Data cleaning (remove spiders/bots), user identification, session identification</li>
+<li><strong>Pattern Discovery:</strong> Apply mining techniques (association rules, clustering, sequential patterns)</li>
+<li><strong>Pattern Analysis:</strong> Filter and interpret discovered patterns</li>
+</ol>
+<h4>Applications of Web Usage Mining</h4>
+<ul>
+<li>Personalized recommendations (Amazon, Netflix)</li>
+<li>Website redesign based on popular navigation paths</li>
+<li>E-commerce conversion funnel optimization</li>
+<li>Detecting web crawlers and fraudulent users</li>
+<li>Predicting user's next click (pre-fetching)</li>
+</ul>
+<div class="note">📌 Web Content Mining = what is on pages. Web Structure Mining = how pages link together. Web Usage Mining = how users navigate.</div>
+</div></div>
+
+
+<!-- ==================== SECTION 6: NEURAL NETWORKS ==================== -->
+<div class="section-title" id="s6">Section 6 — Neural Networks &amp; Regression <span>Q46–Q54</span></div>
+
+<!-- Q46 -->
+<div class="q-card" id="q46">
+<div class="q-header"><span class="q-num">Q 46</span><span class="q-text">What do you mean by perceptron? Discuss single-layer and multi-layer perceptron.</span></div>
+<div class="q-body">
+<h3>Perceptron</h3>
+<p>A <strong>perceptron</strong> is the simplest form of an artificial neural network — a single neuron that takes multiple inputs, applies weights, sums them, and passes the result through an activation function to produce a binary output.</p>
+<div class="formula">Output = f(Σᵢ wᵢxᵢ + b)
+
+where xᵢ = input features
+      wᵢ = weights
+      b  = bias
+      f  = activation function (step function for basic perceptron)
+
+Step activation: output = 1 if (Σwᵢxᵢ + b) ≥ threshold, else 0</div>
+<h3>Single-Layer Perceptron (SLP)</h3>
+<p>A single-layer perceptron has only one layer of input nodes connected directly to one output node. It can only learn <strong>linearly separable</strong> patterns.</p>
+<div class="diagram">
+<div class="diagram-title">Single-Layer Perceptron</div>
+<svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" width="100%">
+<circle cx="60" cy="40" r="18" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.4)" stroke-width="1.5"/>
+<text x="60" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">x₁</text>
+<circle cx="60" cy="90" r="18" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.4)" stroke-width="1.5"/>
+<text x="60" y="94" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">x₂</text>
+<circle cx="60" cy="140" r="18" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.4)" stroke-width="1.5"/>
+<text x="60" y="144" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">x₃</text>
+<circle cx="220" cy="90" r="28" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.4)" stroke-width="2"/>
+<text x="220" y="87" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#c2610f">Σ+f</text>
+<text x="220" y="100" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#c2610f">(neuron)</text>
+<line x1="78" y1="45" x2="192" y2="78" stroke="#1d6fa4" stroke-width="1.2"/>
+<text x="130" y="58" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">w₁</text>
+<line x1="78" y1="90" x2="192" y2="90" stroke="#1d6fa4" stroke-width="1.2"/>
+<text x="130" y="86" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">w₂</text>
+<line x1="78" y1="135" x2="192" y2="102" stroke="#1d6fa4" stroke-width="1.2"/>
+<text x="130" y="125" font-family="Outfit,sans-serif" font-size="9" fill="#6b7280">w₃</text>
+<line x1="248" y1="90" x2="310" y2="90" stroke="#c2610f" stroke-width="1.5"/>
+<circle cx="330" cy="90" r="20" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.4)" stroke-width="1.5"/>
+<text x="330" y="94" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#16a05e">out</text>
+</svg>
+</div>
+<div class="formula">Learning Rule (Perceptron Update):
+  wᵢ ← wᵢ + η × (target - output) × xᵢ
+  where η = learning rate (0 < η ≤ 1)
+
+Limitation: Cannot solve XOR problem (not linearly separable)</div>
+<h3>Multi-Layer Perceptron (MLP)</h3>
+<p>An MLP adds one or more <strong>hidden layers</strong> between input and output. This allows learning of non-linear decision boundaries. Trained using the <strong>Backpropagation</strong> algorithm.</p>
+<div class="diagram">
+<div class="diagram-title">Multi-Layer Perceptron (3-layer feedforward network)</div>
+<svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg" width="100%">
+<text x="70" y="15" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#1d6fa4">Input Layer</text>
+<text x="250" y="15" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#c2610f">Hidden Layer</text>
+<text x="420" y="15" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#16a05e">Output Layer</text>
+<circle cx="70" cy="50" r="16" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.3)" stroke-width="1.5"/>
+<text x="70" y="54" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#1d6fa4">x₁</text>
+<circle cx="70" cy="95" r="16" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.3)" stroke-width="1.5"/>
+<text x="70" y="99" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#1d6fa4">x₂</text>
+<circle cx="70" cy="140" r="16" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.3)" stroke-width="1.5"/>
+<text x="70" y="144" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#1d6fa4">x₃</text>
+<circle cx="250" cy="40" r="16" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.3)" stroke-width="1.5"/>
+<text x="250" y="44" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#c2610f">h₁</text>
+<circle cx="250" cy="90" r="16" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.3)" stroke-width="1.5"/>
+<text x="250" y="94" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#c2610f">h₂</text>
+<circle cx="250" cy="140" r="16" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.3)" stroke-width="1.5"/>
+<text x="250" y="144" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#c2610f">h₃</text>
+<circle cx="420" cy="65" r="16" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.3)" stroke-width="1.5"/>
+<text x="420" y="69" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#16a05e">y₁</text>
+<circle cx="420" cy="115" r="16" fill="rgba(22,160,94,0.12)" stroke="rgba(22,160,94,0.3)" stroke-width="1.5"/>
+<text x="420" y="119" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#16a05e">y₂</text>
+<line x1="86" y1="55" x2="234" y2="44" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="57" x2="234" y2="90" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="58" x2="234" y2="136" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="95" x2="234" y2="44" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="95" x2="234" y2="90" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="95" x2="234" y2="136" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="140" x2="234" y2="44" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="140" x2="234" y2="90" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="86" y1="140" x2="234" y2="136" stroke="#1d6fa4" stroke-width="0.8" opacity="0.5"/>
+<line x1="266" y1="44" x2="404" y2="65" stroke="#c2610f" stroke-width="0.8" opacity="0.5"/>
+<line x1="266" y1="44" x2="404" y2="112" stroke="#c2610f" stroke-width="0.8" opacity="0.5"/>
+<line x1="266" y1="90" x2="404" y2="65" stroke="#c2610f" stroke-width="0.8" opacity="0.5"/>
+<line x1="266" y1="90" x2="404" y2="112" stroke="#c2610f" stroke-width="0.8" opacity="0.5"/>
+<line x1="266" y1="136" x2="404" y2="65" stroke="#c2610f" stroke-width="0.8" opacity="0.5"/>
+<line x1="266" y1="136" x2="404" y2="112" stroke="#c2610f" stroke-width="0.8" opacity="0.5"/>
+</svg>
+</div>
+<h3>Backpropagation</h3>
+<div class="formula">Forward pass: Compute output layer by layer
+Compute error: E = ½(target - output)²
+Backward pass: Propagate error backward, update weights:
+  δ_output = (target - output) × f'(net_output)
+  δ_hidden = (Σ δ_output × w) × f'(net_hidden)
+  Δwᵢⱼ = η × δⱼ × outputᵢ</div>
+<div class="note">📌 MLP can approximate any continuous function (Universal Approximation Theorem). More hidden layers = deeper network = more complex patterns learned.</div>
+</div></div>
+
+<!-- Q47 -->
+<div class="q-card" id="q47">
+<div class="q-header"><span class="q-num">Q 47</span><span class="q-text">Draw and explain the topology of a multilayer, feed-forward Neural Network.</span></div>
+<div class="q-body">
+<h3>Topology of Multi-Layer Feed-Forward Neural Network</h3>
+<p>A feed-forward neural network (FFNN) consists of layers of neurons where information flows in only one direction — from input to output. There are no feedback loops.</p>
+<h3>Layers</h3>
+<div class="three-col">
+<div class="col-box"><strong>Input Layer</strong><p>Receives raw input features. One neuron per feature. No computation — just passes values forward. Includes bias node.</p></div>
+<div class="col-box"><strong>Hidden Layer(s)</strong><p>One or more layers between input and output. Each neuron applies weighted sum + activation function. Learns abstract feature representations.</p></div>
+<div class="col-box"><strong>Output Layer</strong><p>Produces final prediction. Number of neurons = number of classes (classification) or 1 (regression). Uses sigmoid/softmax activation.</p></div>
+</div>
+<h3>Activation Functions</h3>
+<div class="formula">Sigmoid:    f(x) = 1/(1+e⁻ˣ)             range: (0,1)
+Tanh:       f(x) = (eˣ-e⁻ˣ)/(eˣ+e⁻ˣ)    range: (-1,1)
+ReLU:       f(x) = max(0,x)               range: [0,∞)
+Softmax:    f(xᵢ) = eˣⁱ / Σeˣʲ          for multi-class output</div>
+<h3>Complete Topology Diagram</h3>
+<div class="diagram">
+<div class="diagram-title">Multi-Layer Feed-Forward Neural Network Topology</div>
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" width="100%">
+<rect x="5" y="5" width="120" height="210" rx="8" fill="rgba(29,111,164,0.04)" stroke="rgba(29,111,164,0.15)" stroke-width="1"/>
+<text x="65" y="22" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#1d6fa4">INPUT LAYER</text>
+<circle cx="65" cy="55" r="18" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.35)" stroke-width="1.5"/>
+<text x="65" y="59" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">x₁</text>
+<circle cx="65" cy="105" r="18" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.35)" stroke-width="1.5"/>
+<text x="65" y="109" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">x₂</text>
+<circle cx="65" cy="155" r="18" fill="rgba(29,111,164,0.12)" stroke="rgba(29,111,164,0.35)" stroke-width="1.5"/>
+<text x="65" y="159" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">x₃</text>
+<circle cx="65" cy="200" r="14" fill="rgba(29,111,164,0.06)" stroke="rgba(29,111,164,0.2)" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="65" y="204" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#1d6fa4">b₀</text>
+<rect x="145" y="5" width="160" height="210" rx="8" fill="rgba(194,97,15,0.04)" stroke="rgba(194,97,15,0.15)" stroke-width="1"/>
+<text x="225" y="22" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#c2610f">HIDDEN LAYER 1</text>
+<circle cx="225" cy="48" r="18" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.35)" stroke-width="1.5"/>
+<text x="225" y="45" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#c2610f">h₁</text><text x="225" y="56" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#c2610f">σ(Σwx+b)</text>
+<circle cx="225" cy="98" r="18" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.35)" stroke-width="1.5"/>
+<text x="225" y="95" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#c2610f">h₂</text><text x="225" y="106" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#c2610f">σ(Σwx+b)</text>
+<circle cx="225" cy="148" r="18" fill="rgba(194,97,15,0.12)" stroke="rgba(194,97,15,0.35)" stroke-width="1.5"/>
+<text x="225" y="145" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#c2610f">h₃</text><text x="225" y="156" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#c2610f">σ(Σwx+b)</text>
+<circle cx="225" cy="198" r="14" fill="rgba(194,97,15,0.06)" stroke="rgba(194,97,15,0.2)" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="225" y="202" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#c2610f">b₁</text>
+<rect x="325" y="5" width="160" height="210" rx="8" fill="rgba(8,145,178,0.04)" stroke="rgba(8,145,178,0.15)" stroke-width="1"/>
+<text x="405" y="22" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#0891b2">HIDDEN LAYER 2</text>
+<circle cx="405" cy="68" r="18" fill="rgba(8,145,178,0.12)" stroke="rgba(8,145,178,0.35)" stroke-width="1.5"/>
+<text x="405" y="65" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#0891b2">h₄</text><text x="405" y="76" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#0891b2">ReLU</text>
+<circle cx="405" cy="128" r="18" fill="rgba(8,145,178,0.12)" stroke="rgba(8,145,178,0.35)" stroke-width="1.5"/>
+<text x="405" y="125" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#0891b2">h₅</text><text x="405" y="136" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#0891b2">ReLU</text>
+<circle cx="405" cy="198" r="14" fill="rgba(8,145,178,0.06)" stroke="rgba(8,145,178,0.2)" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="405" y="202" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#0891b2">b₂</text>
+<rect x="505" y="5" width="120" height="210" rx="8" fill="rgba(22,160,94,0.04)" stroke="rgba(22,160,94,0.15)" stroke-width="1"/>
+<text x="565" y="22" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#16a05e">OUTPUT LAYER</text>
+<circle cx="565" cy="78" r="18" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="2"/>
+<text x="565" y="75" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="600" fill="#16a05e">y₁</text><text x="565" y="86" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#16a05e">softmax</text>
+<circle cx="565" cy="128" r="18" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="2"/>
+<text x="565" y="125" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="600" fill="#16a05e">y₂</text><text x="565" y="136" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#16a05e">softmax</text>
+<line x1="83" y1="58" x2="207" y2="50" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="58" x2="207" y2="98" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="58" x2="207" y2="148" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="105" x2="207" y2="50" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="105" x2="207" y2="98" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="105" x2="207" y2="148" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="155" x2="207" y2="50" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="155" x2="207" y2="98" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="83" y1="155" x2="207" y2="148" stroke="#1d6fa4" stroke-width="0.7" opacity="0.4"/>
+<line x1="243" y1="50" x2="387" y2="68" stroke="#c2610f" stroke-width="0.7" opacity="0.4"/>
+<line x1="243" y1="50" x2="387" y2="128" stroke="#c2610f" stroke-width="0.7" opacity="0.4"/>
+<line x1="243" y1="98" x2="387" y2="68" stroke="#c2610f" stroke-width="0.7" opacity="0.4"/>
+<line x1="243" y1="98" x2="387" y2="128" stroke="#c2610f" stroke-width="0.7" opacity="0.4"/>
+<line x1="243" y1="148" x2="387" y2="68" stroke="#c2610f" stroke-width="0.7" opacity="0.4"/>
+<line x1="243" y1="148" x2="387" y2="128" stroke="#c2610f" stroke-width="0.7" opacity="0.4"/>
+<line x1="423" y1="68" x2="547" y2="78" stroke="#0891b2" stroke-width="0.7" opacity="0.4"/>
+<line x1="423" y1="68" x2="547" y2="128" stroke="#0891b2" stroke-width="0.7" opacity="0.4"/>
+<line x1="423" y1="128" x2="547" y2="78" stroke="#0891b2" stroke-width="0.7" opacity="0.4"/>
+<line x1="423" y1="128" x2="547" y2="128" stroke="#0891b2" stroke-width="0.7" opacity="0.4"/>
+</svg>
+</div>
+<h3>Key Properties of Feed-Forward Network</h3>
+<ul>
+<li>Information flows only forward (input → hidden → output)</li>
+<li>No cycles or feedback connections</li>
+<li>Each layer is fully connected to the next (dense layer)</li>
+<li>Trained using backpropagation + gradient descent</li>
+<li>More hidden layers = more complex feature extraction</li>
+</ul>
+</div></div>
+
+<!-- Q48 -->
+<div class="q-card" id="q48">
+<div class="q-header"><span class="q-num">Q 48</span><span class="q-text">Briefly explain linear and non-linear regression.</span></div>
+<div class="q-body">
+<h3>Regression Analysis</h3>
+<p>Regression is a statistical method used to model and predict the relationship between a dependent variable (Y) and one or more independent variables (X). The output is always a continuous numerical value.</p>
+<h3>Linear Regression</h3>
+<p>Models the relationship between variables as a <strong>straight line</strong>. Assumes linear relationship between input and output.</p>
+<div class="formula">Simple Linear Regression (1 input):
+  Y = β₀ + β₁X + ε
+
+Multiple Linear Regression (n inputs):
+  Y = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ + ε
+
+where β₀ = intercept, βᵢ = slope coefficients, ε = error term
+
+Cost function (minimize):
+  MSE = (1/n) Σ(Yᵢ - Ŷᵢ)²
+
+Normal Equation (closed form solution):
+  β = (XᵀX)⁻¹ XᵀY</div>
+<div class="formula">Example:
+  Salary (Y) vs Years of Experience (X)
+  Y = 25000 + 8000 × X
+  For X=5 years: Y = 25000 + 40000 = ₹65,000</div>
+<h3>Non-Linear Regression</h3>
+<p>Models complex, curved relationships between variables that cannot be captured by a straight line.</p>
+<div class="formula">Polynomial Regression:
+  Y = β₀ + β₁X + β₂X² + β₃X³ + ... + βₙXⁿ
+
+Exponential Regression:
+  Y = ae^(bX)
+
+Logarithmic Regression:
+  Y = a + b × ln(X)
+
+Example — Polynomial (degree 2):
+  House price = 100000 + 500×sqft - 0.01×sqft²</div>
+<table>
+<tr><th>Feature</th><th>Linear Regression</th><th>Non-Linear Regression</th></tr>
+<tr><td>Relationship</td><td>Straight line</td><td>Curved (polynomial, exponential, etc.)</td></tr>
+<tr><td>Complexity</td><td>Simple, interpretable</td><td>More complex</td></tr>
+<tr><td>Solution</td><td>Closed-form (Normal Equation)</td><td>Iterative optimization needed</td></tr>
+<tr><td>Overfitting risk</td><td>Lower (simpler model)</td><td>Higher for high-degree polynomials</td></tr>
+<tr><td>Use case</td><td>Salary vs experience</td><td>Population growth, drug response</td></tr>
+</table>
+<div class="note">📌 Polynomial regression is technically a linear model (linear in coefficients) but non-linear in the input features. True non-linear regression involves non-linear parameters.</div>
+</div></div>
+
+<!-- Q49 -->
+<div class="q-card" id="q49">
+<div class="q-header"><span class="q-num">Q 49</span><span class="q-text">Explain mean, median and mode with example.</span></div>
+<div class="q-body">
+<h3>Measures of Central Tendency</h3>
+<p>These are statistical measures that describe the center of a data distribution.</p>
+<h3>Mean (Arithmetic Average)</h3>
+<p>The mean is the sum of all values divided by the number of values. It is the most commonly used measure of central tendency but is sensitive to outliers.</p>
+<div class="formula">Mean (μ) = (Σxᵢ) / n = (x₁ + x₂ + ... + xₙ) / n
+
+Example: Salaries = {30000, 35000, 40000, 42000, 100000}
+Mean = (30000+35000+40000+42000+100000) / 5
+     = 247000 / 5 = ₹49,400
+
+⚠️ Note: The outlier 100000 pulls the mean up significantly</div>
+<h3>Median</h3>
+<p>The median is the middle value when data is sorted in ascending order. It is resistant to outliers and is a better measure for skewed distributions.</p>
+<div class="formula">For odd n: Median = value at position (n+1)/2
+For even n: Median = average of values at positions n/2 and n/2+1
+
+Example: Sorted = {30000, 35000, 40000, 42000, 100000}
+n=5 (odd) → Median = value at position (5+1)/2 = 3rd value = ₹40,000
+
+Even example: {10, 20, 30, 40}
+Median = (20+30)/2 = 25</div>
+<h3>Mode</h3>
+<p>The mode is the most frequently occurring value in the dataset. A dataset can have no mode, one mode (unimodal), two modes (bimodal), or multiple modes.</p>
+<div class="formula">Example 1: {2, 3, 3, 4, 5, 3, 7} → Mode = 3 (appears 3 times)
+Example 2: {1, 2, 3, 4, 5} → No mode (all appear once)
+Example 3: {2, 2, 3, 3, 5} → Bimodal: Mode = 2 and 3
+Example 4: Grades = {A, B, A, C, A, B} → Mode = A</div>
+<table>
+<tr><th>Measure</th><th>Best Used When</th><th>Sensitive to Outliers</th></tr>
+<tr><td>Mean</td><td>Data is symmetric, no outliers</td><td>Yes — highly sensitive</td></tr>
+<tr><td>Median</td><td>Data is skewed or has outliers</td><td>No — robust</td></tr>
+<tr><td>Mode</td><td>Categorical data or most frequent value needed</td><td>No</td></tr>
+</table>
+<div class="highlight">For the salary dataset above: Mean=₹49,400, Median=₹40,000. The median better represents the "typical" salary because the outlier (₹1,00,000) inflates the mean.</div>
+</div></div>
+
+
+<!-- ==================== SECTION 7: ADVANCED TOPICS ==================== -->
+<div class="section-title" id="s7">Section 7 — Advanced Topics <span>Q55–Q60</span></div>
+
+<!-- Q50 -->
+<div class="q-card" id="q50">
+<div class="q-header"><span class="q-num">Q 50</span><span class="q-text">Briefly explain the spatial data mining and temporal mining.</span></div>
+<div class="q-body">
+<h3>Spatial Data Mining</h3>
+<p><strong>Spatial data mining</strong> is the process of discovering interesting and previously unknown, but potentially useful, patterns from spatial databases — databases that store geographic or spatial data (coordinates, locations, shapes).</p>
+<h3>Types of Spatial Knowledge</h3>
+<div class="two-col">
+<div class="col-box"><strong>Spatial Characteristic Rules</strong><p>Describe spatial objects of a target class. E.g., "Large cities tend to be near rivers or coasts."</p></div>
+<div class="col-box"><strong>Spatial Association Rules</strong><p>Relate spatial and non-spatial objects. E.g., "70% of earthquakes occur near tectonic plate boundaries."</p></div>
+<div class="col-box"><strong>Spatial Classification</strong><p>Classify spatial objects into categories. E.g., land use classification (urban, agricultural, forest) from satellite imagery.</p></div>
+<div class="col-box"><strong>Spatial Clustering</strong><p>Find clusters of spatially close objects. E.g., identify disease hotspots, crime clusters, accident-prone zones.</p></div>
+</div>
+<h4>Applications</h4>
+<ul>
+<li>GIS (Geographic Information Systems) — urban planning, disaster management</li>
+<li>GPS navigation — traffic pattern analysis, route optimization</li>
+<li>Epidemiology — tracking disease spread spatially</li>
+<li>Remote sensing — land cover classification from satellite images</li>
+<li>Retail site selection — finding optimal store locations</li>
+</ul>
+<h3>Temporal Data Mining</h3>
+<p><strong>Temporal data mining</strong> (also called time-series mining) extracts patterns and knowledge from time-ordered data — data where the time dimension plays a crucial role.</p>
+<h3>Types of Temporal Patterns</h3>
+<div class="two-col">
+<div class="col-box"><strong>Trends</strong><p>Long-term increasing or decreasing movement in data over time. E.g., rising global temperatures, increasing internet usage.</p></div>
+<div class="col-box"><strong>Seasonality</strong><p>Regular, periodic fluctuations at fixed intervals. E.g., higher retail sales in December every year.</p></div>
+<div class="col-box"><strong>Cyclic Patterns</strong><p>Irregular longer-term cycles. E.g., economic boom-bust cycles over several years.</p></div>
+<div class="col-box"><strong>Irregular Variations</strong><p>Random, unpredictable fluctuations not attributable to trend, seasonality, or cycles.</p></div>
+</div>
+<h4>Applications</h4>
+<ul>
+<li>Stock market prediction and financial analysis</li>
+<li>Weather forecasting from historical temperature, pressure data</li>
+<li>Patient monitoring — detecting anomalies in ECG/EEG signals</li>
+<li>Industrial sensor monitoring — predictive maintenance</li>
+<li>Sales forecasting for inventory management</li>
+</ul>
+<div class="note">📌 Spatiotemporal databases combine both spatial and temporal dimensions — e.g., tracking hurricane paths over time on a map.</div>
+</div></div>
+
+<!-- Q51 -->
+<div class="q-card" id="q51">
+<div class="q-header"><span class="q-num">Q 51</span><span class="q-text">Define time series database. Explain how to characterize time series data using trend analysis.</span></div>
+<div class="q-body">
+<h3>Time Series Database</h3>
+<p>A <strong>time series database</strong> is a database that stores sequences of values measured at successive points in time, with equal spacing between intervals. Each record includes a timestamp and one or more measured values.</p>
+<div class="formula">Time series: T = {(t₁,v₁), (t₂,v₂), ..., (tₙ,vₙ)}
+where tᵢ = timestamp, vᵢ = observed value at tᵢ
+
+Examples:
+  • Stock prices recorded every minute
+  • Daily temperature readings over 10 years
+  • Monthly sales data over 5 years
+  • Hourly electricity consumption</div>
+<h3>Characteristics of Time Series Data</h3>
+<ul>
+<li><strong>Autocorrelation:</strong> Values close in time tend to be correlated</li>
+<li><strong>Non-stationarity:</strong> Statistical properties (mean, variance) change over time</li>
+<li><strong>Seasonality:</strong> Regular patterns at fixed intervals</li>
+<li><strong>Trend:</strong> Long-term systematic movement</li>
+</ul>
+<h3>Trend Analysis</h3>
+<p>Trend analysis identifies the long-term direction (upward, downward, or stationary) of a time series by removing short-term fluctuations.</p>
+<h4>Methods for Trend Detection</h4>
+<h4>1. Moving Average</h4>
+<div class="formula">SMA_k(t) = (x(t) + x(t-1) + ... + x(t-k+1)) / k
+
+Example (3-period MA):
+Month:  Jan Feb Mar Apr May Jun
+Sales:   10  14  12  16  18  20
+3-MA:    -   -   12  14  15.3 18
+
+The 3-MA smooths out noise and reveals the upward trend.</div>
+<h4>2. Linear Trend Line (Least Squares)</h4>
+<div class="formula">Fit: Ŷₜ = a + bt
+where b = slope (trend direction and magnitude)
+      a = intercept
+
+Calculate b = [nΣtY - ΣtΣY] / [nΣt² - (Σt)²]
+         a = (ΣY - bΣt) / n</div>
+<h4>3. Decomposition</h4>
+<div class="formula">Time series = Trend + Seasonal + Cyclical + Irregular
+
+Additive model:    Y = T + S + C + I
+Multiplicative:    Y = T × S × C × I</div>
+<h3>Applications of Trend Analysis</h3>
+<ul>
+<li>Economic forecasting — GDP growth trends</li>
+<li>Demand forecasting — seasonal sales patterns</li>
+<li>Climate science — temperature trend over decades</li>
+<li>Healthcare — tracking epidemic spread trends</li>
+</ul>
+</div></div>
+
+<!-- Q52 -->
+<div class="q-card" id="q52">
+<div class="q-header"><span class="q-num">Q 52</span><span class="q-text">Discuss any four data mining features available in WEKA.</span></div>
+<div class="q-body">
+<h3>WEKA (Waikato Environment for Knowledge Analysis)</h3>
+<p>WEKA is an open-source machine learning and data mining software developed at the University of Waikato, New Zealand. It provides a comprehensive collection of algorithms and tools accessible through a graphical interface.</p>
+<h3>Key Features of WEKA</h3>
+<h4>1. Data Pre-Processing (Explorer → Preprocess)</h4>
+<p>WEKA provides extensive data pre-processing capabilities:</p>
+<ul>
+<li><strong>Filters:</strong> Attribute selection, normalization, discretization, removing duplicates</li>
+<li><strong>Missing value handling:</strong> Replace with mean, median or remove instances</li>
+<li><strong>Data format support:</strong> ARFF, CSV, XRFF, JSON, databases via JDBC</li>
+<li><strong>Instance weighting:</strong> Assign different weights to different training instances</li>
+</ul>
+<h4>2. Classification Algorithms (Explorer → Classify)</h4>
+<p>WEKA implements a wide variety of classification algorithms:</p>
+<ul>
+<li><strong>trees:</strong> J48 (C4.5), RandomForest, RandomTree, REPTree, DecisionStump</li>
+<li><strong>bayes:</strong> NaiveBayes, BayesNet, NaiveBayesMultinomial</li>
+<li><strong>lazy:</strong> IBk (KNN), KStar, LWL</li>
+<li><strong>functions:</strong> SMO (SVM), Logistic, LinearRegression, MultilayerPerceptron</li>
+<li>Cross-validation, train/test split, percentage split evaluation</li>
+</ul>
+<h4>3. Clustering Algorithms (Explorer → Cluster)</h4>
+<p>WEKA supports major clustering methods:</p>
+<ul>
+<li><strong>SimpleKMeans:</strong> K-Means clustering with configurable k and distance function</li>
+<li><strong>EM:</strong> Expectation-Maximization for Gaussian Mixture Models</li>
+<li><strong>Hierarchical Clusterer:</strong> Agglomerative hierarchical clustering</li>
+<li><strong>DBSCAN:</strong> Density-based spatial clustering</li>
+<li>Evaluation using log-likelihood or within-cluster sum of squares</li>
+</ul>
+<h4>4. Association Rule Mining (Explorer → Associate)</h4>
+<p>WEKA implements association rule mining algorithms:</p>
+<ul>
+<li><strong>Apriori:</strong> Classic Apriori algorithm with configurable min_sup and min_conf</li>
+<li><strong>FPGrowth:</strong> Efficient frequent pattern growth algorithm</li>
+<li><strong>PredictiveApriori:</strong> Association rules ranked by predictive accuracy</li>
+<li>Output: All strong rules with support, confidence, lift metrics</li>
+</ul>
+<h4>5. Visualization</h4>
+<p>WEKA provides rich visualization: scatter plot matrix, decision tree visualization, ROC curves, cluster visualization, attribute histograms.</p>
+<div class="note">📌 WEKA uses ARFF (Attribute-Relation File Format) as its native file format. It is widely used for academic and research purposes in data mining.</div>
+</div></div>
+
+<!-- Q53 -->
+<div class="q-card" id="q53">
+<div class="q-header"><span class="q-num">Q 53</span><span class="q-text">How data mining is useful for web mining. Discuss any four web mining applications.</span></div>
+<div class="q-body">
+<h3>Data Mining for Web Mining</h3>
+<p><strong>Web mining</strong> applies data mining techniques to extract useful knowledge from the World Wide Web. The Web is a massive repository of semi-structured and unstructured data — web pages, hyperlinks, server logs, user interactions — all of which can be mined for valuable insights.</p>
+<h3>Three Categories of Web Mining</h3>
+<div class="three-col">
+<div class="col-box"><strong>Web Content Mining</strong><p>Mine text, images, audio, video from web pages. Techniques: text mining, NLP, information extraction.</p></div>
+<div class="col-box"><strong>Web Structure Mining</strong><p>Mine hyperlink structure of the web. Techniques: graph analysis, PageRank, HITS algorithm.</p></div>
+<div class="col-box"><strong>Web Usage Mining</strong><p>Mine server logs and user clickstream data. Techniques: association rules, sequential pattern mining, clustering.</p></div>
+</div>
+<h3>Four Web Mining Applications</h3>
+<h4>1. Search Engine Optimization and Web Ranking</h4>
+<p>Google's PageRank algorithm mines the web's link structure to rank pages by importance. Data mining helps identify which pages are most authoritative and relevant to a search query.</p>
+<div class="formula">PageRank(P) = (1-d) + d × Σ [PR(Tᵢ)/C(Tᵢ)]
+A page with many high-quality inbound links ranks higher.</div>
+<h4>2. Personalized Recommendation Systems</h4>
+<p>E-commerce sites like Amazon and Netflix mine user behavior data (clicks, purchases, ratings, browsing history) to build personalized recommendations using collaborative filtering and association rule mining.</p>
+<div class="formula">Example: "Customers who bought X also bought Y"
+→ Association rule: {X} → {Y} with high support and confidence</div>
+<h4>3. Web Usage Analysis and E-Commerce</h4>
+<p>Mining web server access logs reveals user navigation patterns, popular pages, session durations, bounce rates, and conversion funnels. Retailers use this to optimize their websites and increase conversions.</p>
+<ul>
+<li>Identify where users drop off in the checkout process</li>
+<li>Discover which pages lead to most purchases</li>
+<li>A/B testing analysis for page design</li>
+</ul>
+<h4>4. Sentiment Analysis and Opinion Mining</h4>
+<p>Mining social media, product reviews, and news for public opinions, sentiments, and trends. Natural language processing (NLP) + classification techniques identify positive, negative, or neutral sentiment.</p>
+<ul>
+<li>Brand reputation monitoring on Twitter/Facebook</li>
+<li>Product review summarization on Amazon</li>
+<li>Political opinion analysis during elections</li>
+</ul>
+<div class="note">📌 Web mining is one of the most commercially important applications of data mining — it powers the recommendation engines used by billions of users daily.</div>
+</div></div>
+
+<!-- Q54 -->
+<div class="q-card" id="q54">
+<div class="q-header"><span class="q-num">Q 54</span><span class="q-text">Write a short note on data mining applications.</span></div>
+<div class="q-body">
+<h3>Data Mining Applications</h3>
+<div class="two-col">
+<div class="col-box"><strong>🏦 Banking &amp; Finance</strong><ul><li>Credit risk assessment and loan approval</li><li>Fraud detection in credit card transactions</li><li>Stock market prediction</li><li>Customer churn prediction</li><li>Anti-money laundering (AML) detection</li></ul></div>
+<div class="col-box"><strong>🏥 Healthcare &amp; Medicine</strong><ul><li>Disease diagnosis and prediction</li><li>Drug interaction analysis</li><li>Medical image analysis (X-ray, MRI)</li><li>Genomics and personalized medicine</li><li>Hospital readmission prediction</li></ul></div>
+<div class="col-box"><strong>🛒 Retail &amp; E-Commerce</strong><ul><li>Market basket analysis ("beer and diapers")</li><li>Customer segmentation for targeted marketing</li><li>Inventory optimization and demand forecasting</li><li>Recommendation engines (Amazon, Netflix)</li><li>Price optimization</li></ul></div>
+<div class="col-box"><strong>📡 Telecommunications</strong><ul><li>Network intrusion and anomaly detection</li><li>Customer churn prediction and retention</li><li>Call center optimization</li><li>Network traffic analysis and planning</li><li>Fraud detection (cloning, subscription fraud)</li></ul></div>
+<div class="col-box"><strong>🌐 Web &amp; Social Media</strong><ul><li>Search engine ranking (PageRank)</li><li>Social network analysis</li><li>Sentiment analysis and opinion mining</li><li>Targeted advertising (Google, Facebook)</li><li>Fake news and bot detection</li></ul></div>
+<div class="col-box"><strong>🏭 Manufacturing &amp; Industry</strong><ul><li>Predictive maintenance (IoT sensor data)</li><li>Quality control and defect detection</li><li>Supply chain optimization</li><li>Root cause analysis of failures</li><li>Energy consumption optimization</li></ul></div>
+</div>
+<div class="highlight">Data mining is now a core competency across virtually every industry. The ability to extract actionable knowledge from data is a key competitive advantage in the modern economy.</div>
+</div></div>
+
+<!-- Q55 -->
+<div class="q-card" id="q55">
+<div class="q-header"><span class="q-num">Q 55</span><span class="q-text">What is MapReduce? Define Map and Reduce operations with suitable example.</span></div>
+<div class="q-body">
+<h3>MapReduce</h3>
+<p><strong>MapReduce</strong> is a programming model and framework developed by Google for processing and generating large datasets in parallel across a distributed cluster of commodity hardware. It was introduced in 2004 and implemented as Apache Hadoop MapReduce.</p>
+<h3>Core Philosophy</h3>
+<p>Move computation to the data (not data to computation). The MapReduce framework automatically handles data partitioning, scheduling, fault tolerance, and inter-machine communication.</p>
+<h3>Two Operations</h3>
+<h4>1. Map Operation</h4>
+<p>The Map function takes an input key-value pair and produces a set of intermediate key-value pairs. It processes each record independently — embarrassingly parallel.</p>
+<div class="formula">Map: (key₁, value₁) → list of (key₂, value₂)
+
+Example — Word Count:
+  Input: ("line1", "data mining is fun data")
+  Map output: [("data",1), ("mining",1), ("is",1), ("fun",1), ("data",1)]</div>
+<h4>2. Reduce Operation</h4>
+<p>The Reduce function receives all intermediate values for a given key (after shuffle and sort phase) and merges them to produce a smaller set of values.</p>
+<div class="formula">Reduce: (key₂, list of value₂) → list of (key₃, value₃)
+
+Example — Word Count:
+  Input to Reducer: ("data", [1,1])
+  Reduce: sum all values
+  Output: ("data", 2)
+
+  Input: ("mining", [1])
+  Output: ("mining", 1)</div>
+<h3>Complete Word Count Example</h3>
+<div class="calc-box">Input Documents:
+  Doc1: "data mining is fun"
+  Doc2: "data analysis is useful"
+  Doc3: "mining data reveals patterns"
+
+MAP PHASE (each doc processed in parallel):
+  Doc1 → (data,1),(mining,1),(is,1),(fun,1)
+  Doc2 → (data,1),(analysis,1),(is,1),(useful,1)
+  Doc3 → (mining,1),(data,1),(reveals,1),(patterns,1)
+
+SHUFFLE &amp; SORT (framework groups by key):
+  analysis → [1]
+  data     → [1,1,1]
+  fun      → [1]
+  is       → [1,1]
+  mining   → [1,1]
+  patterns → [1]
+  reveals  → [1]
+  useful   → [1]
+
+REDUCE PHASE (sum counts):
+  analysis → 1
+  data     → 3
+  fun      → 1
+  is       → 2
+  mining   → 2
+  patterns → 1
+  reveals  → 1
+  useful   → 1</div>
+<div class="diagram">
+<div class="diagram-title">MapReduce Flow</div>
+<svg viewBox="0 0 640 100" xmlns="http://www.w3.org/2000/svg" width="100%">
+<defs><marker id="a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#1d6fa4" stroke-width="1.5" stroke-linecap="round"/></marker></defs>
+<rect x="5" y="30" width="90" height="38" rx="7" fill="rgba(29,111,164,0.1)" stroke="rgba(29,111,164,0.3)" stroke-width="1"/>
+<text x="50" y="52" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#1d6fa4">Input Data</text>
+<line x1="97" y1="49" x2="115" y2="49" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a3)"/>
+<rect x="117" y="30" width="100" height="38" rx="7" fill="rgba(194,97,15,0.1)" stroke="rgba(194,97,15,0.3)" stroke-width="1"/>
+<text x="167" y="52" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#c2610f">MAP (parallel)</text>
+<line x1="219" y1="49" x2="237" y2="49" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a3)"/>
+<rect x="239" y="30" width="120" height="38" rx="7" fill="rgba(8,145,178,0.1)" stroke="rgba(8,145,178,0.3)" stroke-width="1"/>
+<text x="299" y="45" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#0891b2">Shuffle &amp; Sort</text>
+<text x="299" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#0891b2">(group by key)</text>
+<line x1="361" y1="49" x2="379" y2="49" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a3)"/>
+<rect x="381" y="30" width="110" height="38" rx="7" fill="rgba(217,79,79,0.1)" stroke="rgba(217,79,79,0.3)" stroke-width="1"/>
+<text x="436" y="52" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="600" fill="#d94f4f">REDUCE (aggregate)</text>
+<line x1="493" y1="49" x2="511" y2="49" stroke="#1d6fa4" stroke-width="1.2" marker-end="url(#a3)"/>
+<rect x="513" y="30" width="110" height="38" rx="7" fill="rgba(22,160,94,0.15)" stroke="rgba(22,160,94,0.4)" stroke-width="1.5"/>
+<text x="568" y="45" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="700" fill="#16a05e">Final Output</text>
+<text x="568" y="60" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" fill="#16a05e">(HDFS)</text>
+</svg>
+</div>
+<div class="note">📌 MapReduce enables data mining on petabyte-scale datasets. Apache Hadoop and Spark implement this model. Spark is 100x faster using in-memory processing.</div>
+</div></div>
+
+<!-- Q56 -->
+<div class="q-card" id="q56">
+<div class="q-header"><span class="q-num">Q 56</span><span class="q-text">Discuss the following terms: 1) Correlation analysis 2) Gain Ratio 3) Sequence Databases</span></div>
+<div class="q-body">
+<h3>1. Correlation Analysis</h3>
+<p>Correlation analysis measures the statistical degree of association between two variables. It identifies whether and how strongly pairs of variables are related.</p>
+<div class="formula">Pearson Correlation Coefficient:
+r = Σ[(xᵢ-x̄)(yᵢ-ȳ)] / √[Σ(xᵢ-x̄)² × Σ(yᵢ-ȳ)²]
+
+Range: -1 ≤ r ≤ +1
+  r = +1 → Perfect positive (both increase together)
+  r = -1 → Perfect negative (one increases, other decreases)
+  r =  0 → No linear correlation</div>
+<p><strong>Uses in data mining:</strong> Feature selection (remove highly correlated features), detecting redundant attributes, understanding relationships before building models.</p>
+<h3>2. Gain Ratio</h3>
+<p>Gain Ratio is an improvement over Information Gain used in the C4.5 decision tree algorithm. It normalizes Information Gain by the Split Information to avoid bias toward attributes with many values.</p>
+<div class="formula">Information Gain: Gain(S, A) = Entropy(S) - Σ [|Sᵥ|/|S|] × Entropy(Sᵥ)
+
+Split Information: SplitInfo(S,A) = -Σ [|Sᵥ|/|S|] × log₂(|Sᵥ|/|S|)
+
+Gain Ratio = Gain(S, A) / SplitInfo(S, A)
+
+Problem with Information Gain: An attribute like "Customer ID" has
+many values → high Information Gain but useless for generalization.
+Gain Ratio penalizes such attributes since SplitInfo is also high.</div>
+<h3>3. Sequence Databases</h3>
+<p>A <strong>sequence database</strong> stores sequences of ordered events or itemsets, where the order matters. Each record is a time-ordered sequence of events associated with an entity (customer, patient, user).</p>
+<div class="formula">Example — Customer Purchase Sequences:
+  Customer 1: (buy phone) → (buy case) → (buy screen protector)
+  Customer 2: (buy laptop) → (buy bag) → (buy mouse)
+  Customer 3: (buy phone) → (buy earphones) → (buy case)
+
+Sequential Pattern Mining finds frequent sub-sequences:
+  Pattern: (buy phone) → (buy case) with support ≥ min_sup
+
+Applications:
+  • Web clickstream analysis (page1 → page2 → page3)
+  • DNA/protein sequence analysis in bioinformatics
+  • Customer purchase path analysis in e-commerce
+  • Log analysis in cybersecurity</div>
+</div></div>
+
+<!-- Q57 -->
+<div class="q-card" id="q57">
+<div class="q-header"><span class="q-num">Q 57</span><span class="q-text">Discuss the following terms: 1) Tree Pruning 2) Information Gain 3) Spatiotemporal Databases</span></div>
+<div class="q-body">
+<h3>1. Tree Pruning</h3>
+<p>Tree pruning reduces the size of a decision tree by removing sections (branches/sub-trees) that provide little predictive power, thereby reducing overfitting and improving generalization.</p>
+<div class="two-col">
+<div class="col-box"><strong>Pre-Pruning</strong><p>Stop tree growth early using threshold on Information Gain, minimum instances per node, or chi-square test. Simple but may stop too early.</p></div>
+<div class="col-box"><strong>Post-Pruning</strong><p>Grow full tree, then remove branches bottom-up if accuracy on validation set does not decrease. More reliable than pre-pruning.</p></div>
+</div>
+<div class="formula">Reduced Error Pruning:
+For each internal node n:
+  1. Replace subtree at n with leaf (majority class)
+  2. Measure accuracy on validation set
+  3. If accuracy ≥ original → keep pruned version
+  4. Repeat until further pruning reduces accuracy</div>
+<h3>2. Information Gain</h3>
+<p>Information Gain measures the reduction in entropy (uncertainty) achieved by splitting data on a particular attribute. Used in ID3 algorithm to select the best split attribute.</p>
+<div class="formula">Entropy(S) = -Σᵢ pᵢ × log₂(pᵢ)
+
+Information Gain:
+Gain(S, A) = Entropy(S) - Σ_{v∈Values(A)} (|Sᵥ|/|S|) × Entropy(Sᵥ)
+
+Example:
+  S = {9 Yes, 5 No}, Entropy(S) = 0.940
+  After splitting on Outlook (Sunny/Overcast/Rain):
+    Gain(S, Outlook) = 0.940 - [5/14×0.971 + 4/14×0 + 5/14×0.971]
+                     = 0.940 - 0.694 = 0.246
+
+Higher Information Gain → better attribute to split on</div>
+<h3>3. Spatiotemporal Databases</h3>
+<p>A <strong>spatiotemporal database</strong> stores data that has both spatial (location) AND temporal (time) components. It captures how spatial data changes over time.</p>
+<div class="formula">Examples of Spatiotemporal Data:
+  • GPS trajectory data: position(x,y) at each timestamp t
+  • Weather station data: temperature, humidity at (lat,lng) over time
+  • Traffic data: vehicle speeds at road segments over time
+  • Epidemic tracking: disease cases at location over months
+
+Spatiotemporal Query Example:
+  "Find all areas where air quality dropped below threshold
+   between 6pm-9pm on weekdays in Q3 2024"</div>
+<h4>Key Operations</h4>
+<ul>
+<li><strong>Trajectory analysis:</strong> Mining movement patterns of moving objects</li>
+<li><strong>Event detection:</strong> Finding when and where significant events occurred</li>
+<li><strong>Spatial co-location:</strong> Features that frequently co-occur in both space and time</li>
+<li><strong>Periodic pattern detection:</strong> Patterns that repeat at regular space-time intervals</li>
+</ul>
+</div></div>
+
+
+<!-- ==================== SECTION 8: NUMERICAL QUESTIONS ==================== -->
+<div class="section-title" id="s8">Section 8 — Numerical Questions <span>Q58–Q62</span></div>
+
+<!-- Q58 -->
+<div class="q-card" id="q58">
+<div class="q-header"><span class="q-num">Q 58</span><span class="q-text">Attribute income: min=12000, max=98000. Normalize income=73600 using (i) Min-Max [0,1] (ii) Z-score (mean=54000, std=16000)</span></div>
+<div class="q-body">
+<h3>Given Data</h3>
+<div class="formula">Attribute: Income
+min_A = 12000
+max_A = 98000
+v = 73600 (value to normalize)
+For Z-score: μ = 54000, σ = 16000</div>
+<h3>(i) Min-Max Normalization</h3>
+<div class="formula">Formula: v' = (v - min_A) / (max_A - min_A) × (new_max - new_min) + new_min
+
+Range [0,1]: new_min=0, new_max=1
+
+v' = (73600 - 12000) / (98000 - 12000) × (1 - 0) + 0
+v' = 61600 / 86000 × 1
+v' = 0.7163</div>
+<div class="calc-box">Step-by-step:
+  Numerator   = v - min_A = 73600 - 12000 = 61600
+  Denominator = max_A - min_A = 98000 - 12000 = 86000
+  v' = 61600 / 86000 = 0.7163
+
+∴ Normalized value (Min-Max) = 0.7163
+  (Income of 73600 maps to 0.7163 in [0,1] range)</div>
+<h3>(ii) Z-Score Normalization</h3>
+<div class="formula">Formula: v' = (v - μ) / σ
+
+v' = (73600 - 54000) / 16000
+v' = 19600 / 16000
+v' = 1.225</div>
+<div class="calc-box">Step-by-step:
+  Difference = v - μ = 73600 - 54000 = 19600
+  v' = 19600 / 16000 = 1.225
+
+∴ Z-score = 1.225
+
+Interpretation: Income of ₹73,600 is 1.225 standard
+deviations ABOVE the mean income of ₹54,000.</div>
+<div class="note">📌 Z-score of 1.225 means the income is above average. Positive Z = above mean; Negative Z = below mean; Z=0 = exactly at mean.</div>
+</div></div>
+
+<!-- Q59 -->
+<div class="q-card" id="q59">
+<div class="q-header"><span class="q-num">Q 59</span><span class="q-text">Minimum salary=20,000, Maximum salary=1,70,000. Map salary 1,00,000 to new range (60,000 to 2,60,000) using min-max normalization.</span></div>
+<div class="q-body">
+<h3>Given Data</h3>
+<div class="formula">min_A     = 20,000
+max_A     = 1,70,000
+v         = 1,00,000 (salary to normalize)
+new_min_A = 60,000
+new_max_A = 2,60,000</div>
+<h3>Apply Min-Max Formula</h3>
+<div class="formula">v' = [(v - min_A) / (max_A - min_A)] × (new_max_A - new_min_A) + new_min_A</div>
+<div class="calc-box">Step 1: Numerator
+  v - min_A = 1,00,000 - 20,000 = 80,000
+
+Step 2: Denominator
+  max_A - min_A = 1,70,000 - 20,000 = 1,50,000
+
+Step 3: New range width
+  new_max_A - new_min_A = 2,60,000 - 60,000 = 2,00,000
+
+Step 4: Apply formula
+  v' = (80,000 / 1,50,000) × 2,00,000 + 60,000
+  v' = 0.5333 × 2,00,000 + 60,000
+  v' = 1,06,666.67 + 60,000
+  v' = 1,66,666.67 ≈ 1,66,667
+
+∴ Salary of ₹1,00,000 maps to ₹1,66,667 in the new range [60,000 to 2,60,000]</div>
+<div class="note">📌 Verification: The original salary ₹1,00,000 is about 53.3% of the way through the old range. In the new range, 53.3% of the way from 60,000 to 2,60,000 gives ≈ 1,66,667. ✓</div>
+</div></div>
+
+<!-- Q60 -->
+<div class="q-card" id="q60">
+<div class="q-header"><span class="q-num">Q 60</span><span class="q-text">Mean salary=54,000, Standard deviation=16,000. Find Z-score of salary 73,600.</span></div>
+<div class="q-body">
+<h3>Given Data</h3>
+<div class="formula">Mean (μ) = 54,000
+Standard Deviation (σ) = 16,000
+Value (v) = 73,600</div>
+<h3>Z-Score Formula</h3>
+<div class="formula">Z = (v - μ) / σ</div>
+<div class="calc-box">Step 1: Subtract mean
+  v - μ = 73,600 - 54,000 = 19,600
+
+Step 2: Divide by standard deviation
+  Z = 19,600 / 16,000 = 1.225
+
+∴ Z-score = 1.225</div>
+<h3>Interpretation</h3>
+<div class="highlight">A Z-score of 1.225 means that the salary of ₹73,600 is <strong>1.225 standard deviations above the mean</strong> salary of ₹54,000.<br><br>
+Using the 68-95-99.7 rule, about 89% of salaries in a normal distribution would be below ₹73,600 (since Z=1.225 corresponds to approximately the 89th percentile).</div>
+<table>
+<tr><th>Z-score</th><th>Meaning</th></tr>
+<tr><td>Z = 0</td><td>Value equals the mean (₹54,000)</td></tr>
+<tr><td>Z > 0</td><td>Value is above the mean</td></tr>
+<tr><td>Z &lt; 0</td><td>Value is below the mean</td></tr>
+<tr><td>Z = 1.225</td><td>₹73,600 is 1.225 std devs above mean</td></tr>
+<tr><td>|Z| > 3</td><td>Typically considered an outlier</td></tr>
+</table>
+</div></div>
+
+<!-- Q61 -->
+<div class="q-card" id="q61">
+<div class="q-header"><span class="q-num">Q 61</span><span class="q-text">Generate strong association rules for given dataset. (BREAD/BUTTER dataset, min_supp=60%, min_conf=80%)</span></div>
+<div class="q-body">
+<h3>Dataset Reference</h3>
+<p>This refers to the BREAD, BUTTER, TOAST dataset from Q21. Using the same dataset with 9 transactions, min_supp=60% (count ≥ 6×0.6 ≈ 5.4 → count ≥ 5), min_conf=80%.</p>
+<div class="calc-box">Total transactions = 9
+min_sup = 60% → min count = ceil(0.6 × 9) = 6 (using 60%)
+
+Actually let's recheck with the provided data:
+BREAD:  T1,T4,T5,T7,T8,T9 → count = 6 (66.7%) ✓
+BUTTER: T1,T2,T3,T4,T6,T8,T9 → count = 7 (77.8%) ✓
+BISCUIT:T3,T5,T6,T7,T8,T9 → count = 6 (66.7%) ✓
+TOAST:  T1,T8 → count = 2 (22.2%) ✗
+MILK:   T2,T4 → count = 2 (22.2%) ✗
+
+L1 = {BREAD}:6, {BUTTER}:7, {BISCUIT}:6
+
+2-itemsets:
+{BREAD,BUTTER}: T1,T4,T8,T9 → 4 (44.4%) ✗
+{BREAD,BISCUIT}: T5,T7,T8,T9 → 4 (44.4%) ✗
+{BUTTER,BISCUIT}: T3,T6,T8,T9 → 4 (44.4%) ✗
+
+None of the 2-itemsets meet 60% support.
+
+NOTE: If min_sup=40% (4/9=44.4%):
+{BREAD,BUTTER}:4 ✓, {BREAD,BISCUIT}:4 ✓, {BUTTER,BISCUIT}:4 ✓
+
+For min_conf=80% from {BREAD,BUTTER}:
+  BREAD→BUTTER: 4/6 = 66.7% ✗
+  BUTTER→BREAD: 4/7 = 57.1% ✗
+
+For min_conf=80% from {BUTTER,BISCUIT}:
+  BISCUIT→BUTTER: 4/6 = 66.7% ✗
+  BUTTER→BISCUIT: 4/7 = 57.1% ✗
+
+CONCLUSION: With min_sup=60% on this 9-transaction dataset,
+no 2-itemsets are frequent. The question likely expects
+min_sup count = 2 (as in Q21 approach):
+
+Using min_sup_count = 2, min_conf = 80%:
+STRONG RULES GENERATED (from Q21):
+1. BREAD → BUTTER (conf=67%) ✗ below 80%
+2. BISCUIT → BUTTER (4/6=67%) ✗
+3. BISCUIT → BREAD (4/6=67%) ✗
+4. BREAD → BISCUIT (4/6=67%) ✗
+
+Strong rules (conf ≥ 80%):
+From {BREAD,BUTTER,TOAST} count=2:
+  TOAST → BREAD: 2/2 = 100% ✓ STRONG
+  TOAST → BUTTER: 2/2 = 100% ✓ STRONG
+  BREAD,TOAST → BUTTER: 2/2 = 100% ✓ STRONG
+  BUTTER,TOAST → BREAD: 2/2 = 100% ✓ STRONG</div>
+<div class="note">📌 In exam, always state the min_sup threshold clearly before working. When min_sup_count=2, rules from 3-itemsets containing TOAST have 100% confidence since TOAST only appears in T1 and T8 (both with BREAD and BUTTER).</div>
+</div></div>
+
+<!-- Q62 -->
+<div class="q-card" id="q62">
+<div class="q-header"><span class="q-num">Q 62</span><span class="q-text">Explain mean, median, mode and proximity measures (combined review question).</span></div>
+<div class="q-body">
+<h3>Quick Reference Summary</h3>
+<table>
+<tr><th>Measure</th><th>Formula</th><th>Example (data: 4,7,7,8,9,10,12)</th><th>Key Property</th></tr>
+<tr><td>Mean</td><td>Σxᵢ/n</td><td>(4+7+7+8+9+10+12)/7 = 57/7 = 8.14</td><td>Sensitive to outliers</td></tr>
+<tr><td>Median</td><td>Middle value when sorted</td><td>Sorted: 4,7,7,8,9,10,12 → Median = 8</td><td>Robust to outliers</td></tr>
+<tr><td>Mode</td><td>Most frequent value</td><td>7 appears twice → Mode = 7</td><td>Works for categorical</td></tr>
+</table>
+<h3>When to Use Each</h3>
+<div class="three-col">
+<div class="col-box"><strong>Use MEAN when:</strong><ul><li>Data is symmetric</li><li>No extreme outliers</li><li>Continuous numeric data</li><li>E.g., average test scores</li></ul></div>
+<div class="col-box"><strong>Use MEDIAN when:</strong><ul><li>Data is skewed</li><li>Outliers present</li><li>E.g., median house price, median income</li></ul></div>
+<div class="col-box"><strong>Use MODE when:</strong><ul><li>Categorical data</li><li>Most common value needed</li><li>E.g., most popular product, most common disease</li></ul></div>
+</div>
+<h3>Proximity Measures Quick Reference</h3>
+<table>
+<tr><th>Measure</th><th>Formula</th><th>Range</th><th>Use Case</th></tr>
+<tr><td>Euclidean</td><td>√[Σ(xᵢ-yᵢ)²]</td><td>[0,∞)</td><td>Continuous data, KNN, K-Means</td></tr>
+<tr><td>Manhattan</td><td>Σ|xᵢ-yᵢ|</td><td>[0,∞)</td><td>High-dimensional, robust to outliers</td></tr>
+<tr><td>Cosine</td><td>(A·B)/(||A||×||B||)</td><td>[0,1]</td><td>Text documents, angle-based similarity</td></tr>
+<tr><td>Jaccard</td><td>|A∩B|/|A∪B|</td><td>[0,1]</td><td>Set similarity, binary data</td></tr>
+<tr><td>Hamming</td><td># differing positions</td><td>[0,n]</td><td>Strings, binary data</td></tr>
+</table>
+<div class="formula">Complete Proximity Example:
+A = (1,2,3), B = (4,6,3)
+
+Euclidean: √[(4-1)²+(6-2)²+(3-3)²] = √[9+16+0] = √25 = 5
+Manhattan: |4-1|+|6-2|+|3-3| = 3+4+0 = 7
+Minkowski(p=3): [3³+4³+0³]^(1/3) = [27+64]^(1/3) = 91^(1/3) ≈ 4.50</div>
+</div></div>
+
+<!-- Footer -->
+<div style="text-align:center;padding:40px 0 20px;color:var(--ink3);font-size:13px;border-top:2px solid var(--border);margin-top:24px;line-height:2.2;">
+  <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--accent);margin-bottom:8px;">Data Mining — Complete Question Bank</div>
+  62 Questions Answered &nbsp;·&nbsp; GEC Patan &nbsp;·&nbsp; Prepared by V.B. Pansiniya<br>
+  <span style="font-size:11px;">KDD · Pre-Processing · Association Rules · Classification · Clustering · Neural Networks · Numericals</span><br>
+  <a href="dashboard.html" style="font-size:12px;color:var(--accent);text-decoration:none;margin-top:8px;display:inline-block;">← Back to Dashboard</a>
+</div>
+
+</div><!-- end container -->
+</body>
+</html>
