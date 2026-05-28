@@ -1263,14 +1263,14 @@ Specificity = 60/70 = 85.7%
 <div class="col-box"><strong>Information Gain</strong><p>Measures the reduction in entropy after splitting on an attribute. Higher gain = better split attribute.</p></div>
 <div class="col-box"><strong>Entropy</strong><p>Measures impurity/disorder of a dataset. Entropy=0 → pure node. Entropy=1 → maximum disorder.</p></div>
 </div>
-<div class="formula">Entropy(S) = -Σ pᵢ × log₂(pᵢ)
-where pᵢ = proportion of class i in set S
-
-For binary class (p positive, n negative):
-Entropy(S) = -(p/(p+n))×log₂(p/(p+n)) - (n/(p+n))×log₂(n/(p+n))
-
-Information Gain:
-Gain(S, A) = Entropy(S) - Σ [|Sᵥ|/|S|] × Entropy(Sᵥ)
+<div class="formula">Entropy(S) = -Σ pᵢ × log₂(pᵢ)<br>
+where pᵢ = proportion of class i in set S<br>
+<br>
+For binary class (p positive, n negative):<br>
+Entropy(S) = -(p/(p+n))×log₂(p/(p+n)) - (n/(p+n))×log₂(n/(p+n))<br>
+<br>
+Information Gain:<br>
+Gain(S, A) = Entropy(S) - Σ [|Sᵥ|/|S|] × Entropy(Sᵥ)<br>
 where Sᵥ = subset of S where attribute A has value v</div>
 <h3>Example — Play Tennis Dataset</h3>
 <table>
